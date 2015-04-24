@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteRule ^$ /index.php?section=integration&content=landing-page [L]
+RewriteRule ^/?$ /index.php?section=integration&content=landing-page [L]
+RewriteRule ^gui/?$ /index.php?section=gui&content=index [L]
+
+RewriteRule ^([^/]+)/([^/]+)\/?$ /index.php?section=$1&content=$2 [L]

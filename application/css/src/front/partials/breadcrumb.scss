@@ -1,0 +1,42 @@
+ul.breadcrumb {
+    padding:0;
+    margin: em(26) 0 0 0;
+    font-size:em(14);
+
+    li {
+        display: inline-block;
+        &:first-child {
+            a {
+                &:before {
+                    @include fa-icon();
+                    content: $fa-var-home;
+                    padding-right:5px;
+                }
+            }
+        }
+        &:last-child {
+            a {
+                color: #1768b3;
+                text-decoration: none; 
+                transition: color 250ms;
+
+                &:hover {
+                    color:#add700;
+                }
+            }
+            &:after {
+                display: none;
+            }
+        }
+        &:after {
+            @include fa-icon();
+            content: $fa-var-angle-right;
+            padding:0 3px;
+            color:#7a7a7a;
+        }
+
+        a {
+            color:#7a7a7a;
+        }
+    }
+}

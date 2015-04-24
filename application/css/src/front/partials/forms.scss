@@ -1,0 +1,56 @@
+form {
+    label {
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-size:em(14);
+        color:#252525;
+        text-transform: uppercase;
+        margin-top: em(10);
+    }
+
+    #{$all-text-inputs} {
+        width: 100%;
+        border:1px solid #d4d4d2;
+        background-color:#f7f7f8;
+        color:#606060;
+        font-family: 'Open Sans', sans-serif;
+        padding:em(10);
+        margin-top: em(7);
+
+        &.parsley-error {
+            background-color: #f7e2e2;
+            border: 1px solid #e53030;
+        }
+    }
+    .parsley-errors-list {
+        display: none;
+    }
+    .datepicker {
+        position:relative;
+        #{$all-text-inputs} {
+            padding-right:30px;
+        }
+        &:after {
+            position: absolute;
+            top:20px;
+            right:10px;
+            @include fa-icon();
+            content: $fa-var-calendar;
+        }
+    }
+    textarea {
+        min-height: 120px;
+    }
+}
+
+.submit-box{
+    padding:30px;
+    background:#f3f3f3;
+
+    &.invert{
+        background:#fff;
+        border:1px solid #d3d3d3;
+    }
+}
+
+

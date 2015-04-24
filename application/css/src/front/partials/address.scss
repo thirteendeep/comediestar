@@ -1,0 +1,21 @@
+address {
+	font-style: normal;
+	line-height: 1.5;
+	
+	&.contact-info{
+		line-height:2;
+		
+		span {
+			&:first-child {
+				color:#bddf33;
+				font-weight:bold;
+			}
+		}
+	}
+	
+	span {
+		&:first-child {
+			color:#add700;
+		}
+	}
+}

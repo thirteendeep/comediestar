@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    font-size: em(14);
+    cursor: pointer;
+    transition: background 250ms;
+    background-color:#1768b3;
+    text-decoration:none;
+    color:#FFF;
+    font-weight:bold;
+    text-transform:uppercase;
+    border-radius:3px;
+
+    &:hover {
+        background-color:#2e80cc;
+        color:#fff;
+    }
+
+    
+}

@@ -1,0 +1,78 @@
+.header_container {
+    background-image: url('/application/images/background_galas.png');
+    background-repeat: no-repeat;
+    height: 445px;
+
+    header {
+        padding:50px 0 0 0;
+
+        ul {
+            float:right;
+            li {
+                display: inline-block;
+            }
+
+            &.barre_technique {
+                a {
+                    font-size: em(16);
+                    color:#3ab596;
+                    font-weight:300;
+
+                    &.courriel:before {
+                        @include fa-icon();
+                        content: $fa-var-envelope-o;
+                    }
+                    &.facebook:before {
+                        @include fa-icon();
+                        content: $fa-var-facebook;
+                    }
+                    &.twitter:before {
+                        @include fa-icon();
+                        content: $fa-var-youtube-play;
+                    }
+                    &.courriel:before,
+                    &.facebook:before,
+                    &.twitter:before {
+                        color:#58585a;
+                        padding-left:20px;
+                    }
+                }
+                
+            }
+            &#main-nav {
+                margin-top: 45px;
+                font-size:em(20); 
+                
+                text-transform: uppercase;
+
+                li {
+                    padding-left:35px;
+                    line-height: 1;
+
+                    &:first-child {
+                        padding-left:0;
+                    }
+                    a {
+                        color:#727274;
+                        font-weight: 400;
+
+                        &:hover {
+                            color:#3ab596;
+                        }
+
+                        span {
+                            display: block;
+                            font-size: 14px;;
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            float:right;
+        }
+        br {
+            clear: both;
+        }
+    }
+}

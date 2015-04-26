@@ -1,8 +1,13 @@
 Options +FollowSymlinks
 RewriteEngine On
 
-RewriteRule ^$ /index.php?section=integration&content=landing-page [L]
+RewriteRule ^$ /index.php?section=integration&content=accueil [L]
 RewriteRule ^/?$ /index.php?section=integration&content=landing-page [L]
 RewriteRule ^gui/?$ /index.php?section=gui&content=index [L]
+
+RewriteRule ^agence-comedie-star/?$ /index.php?section=integration&content=agence [L]
+RewriteRule ^les-galas/?$ /index.php?section=integration&content=galas [L]
+RewriteRule ^forfait-corporatif/?$ /index.php?section=integration&content=forfait [L]
+RewriteRule ^contactez-nous/?$ /index.php?section=integration&content=contact [L]
 
 RewriteRule ^([^/]+)/([^/]+)\/?$ /index.php?section=$1&content=$2 [L]

@@ -1,0 +1,78 @@
+.bloc-comediestar {
+    padding:0 40px;
+    height: 315px;
+    width: 100%;
+    font-size:20px;
+    color:#fff;
+    text-align: center;
+    font-weight: bold;
+    background-image: url('/application/images/box-comediestar.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    &.green {
+        background-color:#3ab596;
+        background-image:none;
+        a {
+            font-size:20px;
+            text-transform: none;
+        }
+        .tel {
+            margin-bottom: 10px;
+            &:before {
+                @include fa-icon();
+                content: $fa-var-phone;
+                padding-right:15px;
+            }
+        }
+        .email {
+            font-size:16px;
+            &:before {
+                @include fa-icon();
+                content: $fa-var-envelope-o;
+                padding-right:15px;
+            }
+        }
+    }
+    &.phil {
+        background-image: url('/application/images/box-comediestar-phil.png');
+    }
+    &.microphone {
+        background-image: url('/application/images/box-comediestar-microphone.png');
+        color:#7e7e80;
+        a {
+            color:#7e7e80;
+        }
+    }
+    div > span {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        text-transform:uppercase;
+        line-height: 1;
+        strong {
+            color:#3ab596;
+        }
+    }
+    p {
+        font-size:13px;
+        color:inherit;
+        font-weight: 400;
+    }
+    a {
+        color:#fff;
+        font-weight: 400;
+        font-size:13px;
+        text-transform: uppercase;
+    }
+    * {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .bloc-soumission,
+    .bloc-comediestar {
+        padding:40px;
+        height: auto;
+    }
+}

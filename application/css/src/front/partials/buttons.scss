@@ -1,22 +1,38 @@
 .btn {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 20px;
     outline: none;
     border: none;
     font-size: em(14);
+    letter-spacing: 1px;
     cursor: pointer;
     transition: background 250ms;
-    background-color:#1768b3;
     text-decoration:none;
-    color:#FFF;
+    color:#fff;
     font-weight:bold;
     text-transform:uppercase;
-    border-radius:3px;
+    text-align: center;
+    font-weight: 500;
 
     &:hover {
-        background-color:#2e80cc;
         color:#fff;
     }
+    
+    &.btn--primary {
+        padding: 7px 20px;
+        background:#3ab596;
+        border-radius: 3px;
+    }
+    &.btn--transparent {
+        background:transprent;
+        border:1px solid #fff;
+        border-radius: 3px;
+    }
 
+    &.ticket:before {
+        @include fa-icon();
+        content: $fa-var-ticket;
+        padding-right:5px;
+    }
     
 }

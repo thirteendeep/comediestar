@@ -45,6 +45,7 @@ em {
 
 p {
     line-height: em(22);
+    color:#61606b;
 }
 ul {
     padding:0;
@@ -52,8 +53,10 @@ ul {
 }
 ul.list {
     padding:0;
+    margin-bottom:20px;
     li {
         font-size:em(12);
+        line-height:1.6;
         color:#61606b;
 
         &:before {
@@ -65,12 +68,12 @@ ul.list {
     }
 }
 a {
-    color: #1768b3;
+    color: #3ab596;
     text-decoration: none; 
     transition: color 250ms;
 
     &:hover {
-        color:#add700;
+        color:#61606b;
     }
 
     &.invert {

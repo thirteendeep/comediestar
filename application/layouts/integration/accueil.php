@@ -30,14 +30,14 @@
                 ?>
                 <li>
                     <article>
-                        <a href="<?php echo $ville[3]; ?>">
-                            <img src="/application/images/villes/<?php echo $ville[2]; ?>" alt="<?php echo $ville[1]; ?>">
+                        <a href="<?php echo $ville['nom']; ?>">
+                            <img src="/application/images/villes/<?php echo $ville['nom']; ?>" alt="<?php echo $ville['nom']; ?>">
                         </a>
                         <h2 class="title_section">
-                            <a href="<?php echo $ville[3]; ?>"><?php echo $ville[0]; ?></a>
+                            <a href="<?php echo $ville['nom']; ?>"><?php echo $ville['nom']; ?></a>
                         </h2>
                         <span>
-                            <a href="<?php echo $ville[3]; ?>"><?php echo $ville[1]; ?></a>
+                            <a href="<?php echo $ville['nom']; ?>"><?php echo $ville['salle']; ?></a>
                         </span>
                     </article>
                 </li>

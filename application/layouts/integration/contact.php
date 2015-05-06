@@ -1,17 +1,13 @@
-<br>
-<br>
-<br>
-
 <div class="row">
     <div class="medium-6 large-offset-1 columns">
         <h1 class="title_section">Écrivez-nous</h1>
-        <form action="">
+        <form action="" data-parsley-validate>
             <div class="row">
                 <div class="medium-6 columns">
-                    <input type="text" placeholder="Prénom">
+                    <input type="text" placeholder="Prénom" required>
                 </div>
                 <div class="medium-6 columns">
-                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Nom" required>
                 </div>
             </div>
             <div class="row">
@@ -19,12 +15,12 @@
                     <input type="text" placeholder="Téléphone">
                 </div>
                 <div class="medium-6 columns">
-                    <input type="email" placeholder="Courriel">
+                    <input type="email" placeholder="Courriel" required>
                 </div>
             </div>
             <div class="row">
                 <div class="medium-12 columns">
-                    <textarea name="" id="" placeholder="Votre message"></textarea>
+                    <textarea name="" id="" placeholder="Votre message" required></textarea>
                 </div>
             </div>
             <input type="submit" class="btn btn--primary" value="Soumettre">
@@ -54,85 +50,9 @@
     </div>
 </div>
 
-<br>
-<br>
-<br>
 
-
-<div class="row">
-    <div class="large-10 large-offset-1 column">
-        <ul class="large-block-grid-3">
-            <?php
-            foreach($villes as $key => $ville) {
-                ?>
-                <li>
-                    <article>
-                        <?php
-                            echo $ville['nom']."<br>";
-                            echo $ville['salle']."<br>";
-                            echo $ville['billetterie']['phone']."<br>";
-                            echo "<a href='".$ville['billetterie']['url']."'>Consulter le site web</a>";
-
-                        ?>
-                    </article>
-                </li>
-                <?php
-            }
-            ?>
-        </ul>
-    </div>
-</div>
-
-<br>
-<br>
-<br>
-
-
-<div class="bandeau">
-    <div class="row">
-        <div class="medium-12 large-4 columns">
-            <h1>
-                Forfaits
-                <strong>
-                    corporatifs
-                </strong>
-            </h1>
-        </div>
-        <div class="medium-12 large-8 columns">
-            <h2>
-                Alexandre Sandoval
-            </h2>
-            <a href="#"> 514.851.8226</a>
-            <br>
-            <a href="" class=" mail">asandoval@comediestar.ca</a>
-        </div>
-    </div>
-</div>
-<div class="bandeau-infolettre">
-    <div class="row">
-        <form action="">
-            <div class="medium-2 columns">
-                <span>
-                    Infolettre
-                </span>
-            </div>
-            <div class="medium-2 columns">
-                <input type="text" placeholder="Prénom">
-            </div>
-            <div class="medium-2 columns">
-                <input type="text" placeholder="Nom">
-            </div>
-            <div class="medium-2 columns">
-                <input type="text" placeholder="Ville">
-            </div>
-            <div class="medium-2 columns">
-                <input type="email" placeholder="Courriel">
-            </div>
-            <div class="medium-2 columns">
-                <button class="btn btn--primary">
-                    S'inscrire
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
+<?php
+    include('/application/layouts/components/contact/listing_villes.php');
+    include('/application/layouts/components/bandeau/bandeau_vert_3.php');
+    include('/application/layouts/components/bandeau/bandeau_infolettre.php');
+?>

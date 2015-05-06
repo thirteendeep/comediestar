@@ -65,65 +65,7 @@
 
 
 
-<div class="bandeau-video">
-    <div class="row">
-        <div class="small-12 medium-6 large-6 columns">
-            <h2 class="title_section">
-                Comédie Star en vidéos
-            </h2>
-        </div>
-        <div class="small-12 medium-6 large-6 columns follow">
-            <a href="#">Suivez notre chaîne</a>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="large-12 column">
-            <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-                <li>
-                    <div class="video">
-                        <img src="http://placehold.it/350x150" alt="">
-                    </div>
-                </li>
-                <li>
-                    <div class="video">
-                        <img src="http://placehold.it/350x150" alt="">
-                    </div>
-                </li>
-                <li>
-                    <div class="video">
-                        <img src="http://placehold.it/350x150" alt="">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="large-12 column text-center">
-            <a href="#" class="btn btn--primary">Voir plus</a>
-        </div>
-    </div>
-</div>
-
-
-<div class="bandeau">
-    <div class="row">
-        <div class="medium-12 large-4 columns">
-            <h1>
-                Forfaits
-                <strong>
-                    corporatifs
-                </strong>
-            </h1>
-        </div>
-        <div class="medium-12 large-8 columns">
-            <h2>
-                À la recherche d’un événement pour votre entreprise?
-            </h2>
-            <em>
-                Nous offrons des forfaits corporatifs à partir de seulement 350$
-            </em>
-            <a href="" class="btn btn--transparent ticket">Renseignez-vous</a>
-        </div>
-    </div>
-</div>
+<?php
+    include('/application/layouts/components/bandeau/bandeau_video.php');
+    include('/application/layouts/components/bandeau/bandeau_vert_2.php');
+?>

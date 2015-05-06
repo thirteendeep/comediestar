@@ -37,11 +37,11 @@
                     <div>
                         <i class="fa fa-quote-right"></i>
                         <span>
-                            Citation goes here lorem ipsum dolor sit amet consequetor
+                            C'est très l'fun la formule, parce qu'on voit plein de talents ...
                         </span>
                         <p>
                             <span class="uppercase">Philippe laprise</span>
-                            Animateur des galas depuis 4 ans
+                            Animateur des galas 2013 à 2015
                         </p>
                     </div>
                 </div>

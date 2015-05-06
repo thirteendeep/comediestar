@@ -11,11 +11,11 @@
         </div>
         <div class="medium-12 large-8 columns">
             <h2>
-                Alexandre Sandoval
+                Alex Sandoval
             </h2>
-            <a href="#"> 514.851.8226</a>
+            <a href="tel:5148518226"> 514.851.8226</a>
             <br>
-            <a href="" class=" mail">asandoval@comediestar.ca</a>
+            <a href="mailto:asandoval@comediestar.ca" class=" mail">asandoval@comediestar.ca</a>
         </div>
     </div>
 </div>

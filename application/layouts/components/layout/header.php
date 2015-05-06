@@ -39,7 +39,7 @@
                         <strong>Le gala d'humour</strong>
                         arrive dans votre région!
                     </h1>
-                    <em>Comédie Star par enfin en tournée à travers le Québec.</em>
+                    <em>Comédie Star part enfin en tournée à travers le Québec.</em>
                     <strong>5 humoristes vedettes. 1 seul soir.</strong>
                 </div>
             </header>

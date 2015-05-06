@@ -1,27 +1,25 @@
 <div class="bandeau-infolettre">
     <div class="row">
-        <form action="">
+        <form action="" data-parsley-validate>
             <div class="medium-2 columns">
                 <span>
                     Infolettre
                 </span>
             </div>
             <div class="medium-2 columns">
-                <input type="text" placeholder="Prénom">
+                <input type="text" placeholder="Prénom" required>
             </div>
             <div class="medium-2 columns">
-                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom" required>
             </div>
             <div class="medium-2 columns">
-                <input type="text" placeholder="Ville">
+                <input type="text" placeholder="Ville" required>
             </div>
             <div class="medium-2 columns">
-                <input type="email" placeholder="Courriel">
+                <input type="email" placeholder="Courriel" required>
             </div>
             <div class="medium-2 columns">
-                <button class="btn btn--primary">
-                    S'inscrire
-                </button>
+                <input type="submit" value="S'inscrire" class="btn btn--primary">
             </div>
         </form>
     </div>

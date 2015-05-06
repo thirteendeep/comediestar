@@ -23,7 +23,7 @@
                     <textarea name="" id="" placeholder="Votre message" required></textarea>
                 </div>
             </div>
-            <input type="submit" class="btn btn--primary" value="Soumettre">
+            <input type="submit" value="Soumettre" class="btn btn--primary">
         </form>
     </div>
 
@@ -43,8 +43,7 @@
         </h3>
         <div class="row">
             <div class="medium-12 column">
-                <a href="tel:5145818226">514.581.8226</a>
-                <a href="mailto:info@comediestar.ca">info@comediestar.ca</a>
+                socials
             </div>
         </div>
     </div>

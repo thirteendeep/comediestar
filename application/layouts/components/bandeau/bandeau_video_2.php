@@ -11,7 +11,7 @@
         </div>
         <div class="large-6 columns">
             <div class="video">
-                <img src="http://placehold.it/350x150" alt="">
+                <iframe width="350" height="150" src="https://www.youtube.com/embed/eJfdyofj8KU" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>

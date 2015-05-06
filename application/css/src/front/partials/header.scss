@@ -38,6 +38,8 @@
                     color:#3ab596;
                     font-weight:400;
 
+
+
                     &.courriel:before {
                         @include fa-icon();
                         content: $fa-var-envelope-o;
@@ -55,6 +57,12 @@
                     &.twitter:before {
                         color:#58585a;
                         padding-left:20px;
+                        transition: all 250ms;
+                    }
+                    &.courriel:hover:before,
+                    &.facebook:hover:before,
+                    &.twitter:hover:before {
+                            color:#3ab596;
                     }
                 }
 

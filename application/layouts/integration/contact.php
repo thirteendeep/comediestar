@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="display:none;">
     <div class="medium-6 large-offset-1 columns">
         <h1 class="title_section">Écrivez-nous</h1>
         <form action="" data-parsley-validate>
@@ -51,7 +51,7 @@
 
 
 <?php
-    include('/application/layouts/components/contact/listing_villes.php');
-    include('/application/layouts/components/bandeau/bandeau_vert_3.php');
-    include('/application/layouts/components/bandeau/bandeau_infolettre.php');
+    //include('/application/layouts/components/contact/listing_villes.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_vert_3.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
 ?>

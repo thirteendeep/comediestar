@@ -49,20 +49,21 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
         <body>
             <div id="site-container">
                 <?php
-                include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/header.php');
+                include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/layout/header.php');
                 include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.routing.php');
-                include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/footer.php');
+                include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/layout/footer.php');
                 ?>
             </div>
             <script src="/application/js/dist/comediestar.min.js"
-            <script>/*
+            <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-xxxxxxxx', 'auto');
-            ga('send', 'pageview');*/
+            ga('create', 'UA-45356387-1', 'auto');
+            ga('send', 'pageview');
+
             </script>
         </body>
         </html>

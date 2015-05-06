@@ -88,5 +88,5 @@
     </div>
 </div>
 <?php
-    include('/application/layouts/components/bandeau/bandeau_infolettre.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
 ?>

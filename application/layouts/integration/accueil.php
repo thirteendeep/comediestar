@@ -1,5 +1,5 @@
 <?php
-    include('/application/layouts/components/bandeau/bandeau_vert_1.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_vert_1.php');
 ?>
 <div class="row villes">
     <div class="large-12 column">
@@ -13,7 +13,7 @@
                 <li>
                     <article>
                         <a href="<?php echo $ville['nom']; ?>">
-                            <img src="/application/images/villes/<?php echo $ville['nom']; ?>" alt="<?php echo $ville['nom']; ?>">
+                            <img src="/application/images/villes/<?php echo $key; ?>.png" alt="<?php echo $ville['nom']; ?>">
                         </a>
                         <h2 class="title_section">
                             <a href="<?php echo $ville['nom']; ?>"><?php echo $ville['nom']; ?></a>
@@ -30,6 +30,6 @@
     </div>
 </div>
 <?php
-    include('/application/layouts/components/bandeau/bandeau_video_2.php');
-    include('/application/layouts/components/bandeau/bandeau_fanclub.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_video_2.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_fanclub.php');
 ?>

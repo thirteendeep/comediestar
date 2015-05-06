@@ -23,9 +23,10 @@
                         <li>
                             <a href="/les-galas" class="<?php echo ($content == "galas") ? "selected" : "" ?>">Les galas<span>comédie star</span></a>
                         </li>
-                        <li>
+                        <?php /*
+                        <li style="">
                             <a href="/forfait-corporatif" class="<?php echo ($content == "forfait") ? "selected" : "" ?>">Forfait<span>corporatif</span></a>
-                        </li>
+                        </li>*/?>
                         <li>
                             <a href="/agence-comedie-star" class="<?php echo ($content == "agence") ? "selected" : "" ?>">L'agence<span>comédie star</span></a>
                         </li>

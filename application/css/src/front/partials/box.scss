@@ -63,6 +63,9 @@
         font-weight: 400;
         font-size:13px;
         text-transform: uppercase;
+        &:hover {
+            color:#3ab596;
+        }
     }
     * {
         display: block;

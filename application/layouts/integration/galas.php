@@ -66,6 +66,6 @@
 
 
 <?php
-    include('/application/layouts/components/bandeau/bandeau_video.php');
-    include('/application/layouts/components/bandeau/bandeau_vert_2.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_video.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_vert_2.php');
 ?>

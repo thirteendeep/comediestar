@@ -15,17 +15,17 @@
             <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
                 <li>
                     <div class="video">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eJfdyofj8KU" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eJfdyofj8KU?showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </li>
                 <li>
                     <div class="video">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QBQEons3lOc" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QBQEons3lOc?showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </li>
                 <li>
                     <div class="video">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pZCgGgz2WsI" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pZCgGgz2WsI?showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </li>
             </ul>

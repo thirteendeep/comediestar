@@ -54,7 +54,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
                 include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/layout/footer.php');
                 ?>
             </div>
-            <script src="/application/js/dist/comediestar.min.js"
+            <script src="/application/js/dist/comediestar.js"
             <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

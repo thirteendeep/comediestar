@@ -23,6 +23,7 @@
     <div class="large-4  columns">
         <div class="row small-collapse">
             <div class="small-12 medium-6 large-12 columns">
+                <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">Open YouTube video</a>
                 <div class="bloc-comediestar table">
                     <div>
                         <i class="fa fa-youtube-play"></i>

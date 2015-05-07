@@ -17,27 +17,31 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/application/css/dist/comediestar.css" />
 
-    <!-- Twitter -->
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" /> 
-    <meta name="twitter:creator" content="" />
-    <meta name="twitter:image" content="" />
-
     <!-- Open Graph -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
+    <meta property="og:title" content="Comedie Star - En tournée" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.comediestar.ca/" />
     <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="Les Galas Comédie Star sont des spectacles d’humour mettant en vedette des humoristes de la relève, les plus grands humoristes Québecois et aussi des vedettes internationales. " />
+    <meta property="og:site_name" content="Comédie Star" />
 
-    <!-- Icons -->
-    <link rel="shortcut icon" type="image/jpg" href="/application/images/favicon.jpg" /> <!-- Desktop -->
-    <link rel="apple-touch-icon" sizes="76x76" href="/application/images/76x76.png"> <!-- iPad -->
-    <link rel="apple-touch-icon" sizes="120x120" href="/application/images/120x120.png"> <!-- iPhone6 high DPI -->
-    <link rel="apple-touch-icon" sizes="152x152" href="/application/images/152x152.png"> <!-- iPad high DPI -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/application/images/180x180.png"> <!-- iPhone6 plus high DPI -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/application/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/application/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/application/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/application/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/application/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/application/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/application/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/application/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/application/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/application/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/application/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/application/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/application/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -150,4 +150,43 @@ $villes = array(
         )
     )
 );
+
+
+/*
+ public function sendmessageAction()
+    {
+        $name = $this->params()->fromPost('fullname');
+        $email = $this->params()->fromPost('email');
+        $telephone = $this->params()->fromPost('telephone');
+        $poste = $this->params()->fromPost('tel-poste');
+        $compagnie = $this->params()->fromPost('compagnie');
+        $date = $this->params()->fromPost('date');
+        $moment = $this->params()->fromPost('moment');
+        $N = count($moment);
+        $moment_string = '';
+        for($i=0; $i < $N; $i++) {
+            $moment_string .= $moment[$i];
+        }
+
+        if(!empty($name) && !empty($email) && !empty($telephone)){
+
+
+            $headers = "Content-type: text/html; charset=UTF-8\r\n"; 
+
+            $subject = 'Formulaire de service - Site web Globalia.ca';
+            $body = "Quelqu'un désire contacter Globalia. Voici ses informations : <br /><br />
+                Nom complet : <b>$name</b><br />
+                Courriel : <b>$email</b><br />
+                Telephone : <b>".(empty($telephone)?'--':$telephone)."</b><br />
+                Poste : <b>".$poste."</b><br />
+                Compagnie : <b>$compagnie</b><br />
+                Date : <b>$date</b><br />
+                Moment : <b>$moment_string</b><br />";
+
+            mail($this->servicesMail, $subject, $body, $headers);
+            //mail("rossc@globalia.ca", $subject, $body, $headers);
+            
+            //echo $status_code . " " . $response;
+            echo $this->translate('Your message was successfully sent to Globalia.');
+			*/
 ?>

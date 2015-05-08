@@ -48,22 +48,32 @@
                         @include fa-icon();
                         content: $fa-var-facebook;
                     }
-                    &.twitter:before {
+                    &.youtube:before {
                         @include fa-icon();
                         content: $fa-var-youtube-play;
                     }
                     &.courriel:before,
                     &.facebook:before,
-                    &.twitter:before {
+                    &.youtube:before {
                         color:#58585a;
                         padding-left:20px;
                         transition: all 250ms;
                     }
                     &.courriel:hover:before,
                     &.facebook:hover:before,
-                    &.twitter:hover:before {
+                    &.youtube:hover:before {
                             color:#3ab596;
                     }
+                }
+
+                select {
+                    background: transparent;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color:#58585a;
+                    position:relative;
+                    right: 15px;
+                    text-align: right;
                 }
 
             }

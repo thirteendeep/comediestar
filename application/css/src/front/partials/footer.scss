@@ -17,3 +17,12 @@ footer {
         color:#231f20;
     }
 }
+
+@media only screen and (max-width: 640px) {
+    footer {
+        text-align: center;
+        .columns:first-child {
+            text-align: center;
+        }
+    }
+}

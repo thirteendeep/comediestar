@@ -42,6 +42,12 @@
     .btn {
         margin-top: 20px;
     }
+    a {
+        color:#fff;
+        &:hover {
+            color:#3ab596;
+        }
+    }
 }
 
 
@@ -274,6 +280,7 @@
         }
         .columns {
             margin-bottom: 20px;
+
         }
         .columns:last-child {
             text-align: right;

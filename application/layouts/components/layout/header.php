@@ -6,16 +6,29 @@
                 <div class="clearfix">
                     <ul class="barre_technique">
                         <li>
+                            <select>
+                                <?php
+                                foreach ($villes as $key => $ville) {
+                                    ?>
+                                    <option>
+                                        <?= $ville['nom']; ?>
+                                    </option>
+                                    <?php
+                                }
+                                ?>
+                            </select> 
+                        </li>
+                        <li>
                             <a href="tel:5145818226">514.581.8226</a>
                         </li>
                         <li>
-                            <a href="#" class="courriel"></a>
+                            <a href="mailto:info@comediestar.ca" class="courriel" target="_blank"></a>
                         </li>
                         <li>
-                            <a href="#" class="facebook"></a>
+                            <a href="https://www.facebook.com/comediestar" class="facebook" target="_blank"></a>
                         </li>
                         <li>
-                            <a href="#" class="twitter"></a>
+                            <a href="http://www.youtube.com/user/comediestar" class="youtube" target="_blank"></a>
                         </li>
                     </ul>
                     <br>
@@ -23,10 +36,9 @@
                         <li>
                             <a href="/les-galas" class="<?php echo ($content == "galas") ? "selected" : "" ?>">Les galas<span>comédie star</span></a>
                         </li>
-                        <?php /*
                         <li style="">
                             <a href="/forfait-corporatif" class="<?php echo ($content == "forfait") ? "selected" : "" ?>">Forfait<span>corporatif</span></a>
-                        </li>*/?>
+                        </li>
                         <li>
                             <a href="/agence-comedie-star" class="<?php echo ($content == "agence") ? "selected" : "" ?>">L'agence<span>comédie star</span></a>
                         </li>

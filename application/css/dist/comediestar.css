@@ -4231,6 +4231,14 @@ Helper classes
   .video {
     margin-top: 50px; } }
 
+@media only screen and (max-width: 340px) {
+  .video {
+    margin-top: 50px; }
+    .video iframe {
+      width: 95% !important;
+      height: auto   !important;
+      margin: 0 auto; } }
+
 /* ==========================================================================
 Print styles
 ========================================================================== */
@@ -4460,7 +4468,7 @@ a {
               -ms-transform: translate(0, 0);
                   transform: translate(0, 0);
           content: "\f09a"; }
-        .header_container header ul.barre_technique a.twitter:before {
+        .header_container header ul.barre_technique a.youtube:before {
           display: inline-block;
           font: normal normal normal 14px/1 FontAwesome;
           font-size: inherit;
@@ -4471,13 +4479,21 @@ a {
               -ms-transform: translate(0, 0);
                   transform: translate(0, 0);
           content: "\f16a"; }
-        .header_container header ul.barre_technique a.courriel:before, .header_container header ul.barre_technique a.facebook:before, .header_container header ul.barre_technique a.twitter:before {
+        .header_container header ul.barre_technique a.courriel:before, .header_container header ul.barre_technique a.facebook:before, .header_container header ul.barre_technique a.youtube:before {
           color: #58585a;
           padding-left: 20px;
           -webkit-transition: all 250ms;
                   transition: all 250ms; }
-        .header_container header ul.barre_technique a.courriel:hover:before, .header_container header ul.barre_technique a.facebook:hover:before, .header_container header ul.barre_technique a.twitter:hover:before {
+        .header_container header ul.barre_technique a.courriel:hover:before, .header_container header ul.barre_technique a.facebook:hover:before, .header_container header ul.barre_technique a.youtube:hover:before {
           color: #3ab596; }
+      .header_container header ul.barre_technique select {
+        background: transparent;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #58585a;
+        position: relative;
+        right: 15px;
+        text-align: right; }
       .header_container header ul#main-nav {
         margin-top: 45px;
         font-size: 1.42857em;
@@ -4546,6 +4562,12 @@ footer {
   footer a {
     font-weight: 400;
     color: #231f20; }
+
+@media only screen and (max-width: 640px) {
+  footer {
+    text-align: center; }
+    footer .columns:first-child {
+      text-align: center; } }
 
 address {
   font-style: normal;
@@ -4642,6 +4664,10 @@ form textarea {
     text-transform: none; }
   .bandeau .btn {
     margin-top: 20px; }
+  .bandeau a {
+    color: #fff; }
+    .bandeau a:hover {
+      color: #3ab596; }
 
 @media only screen and (max-width: 640px) {
   .bandeau h1 {
@@ -4897,7 +4923,19 @@ form textarea {
   background-image: url('/application/images/box-comediestar.png');
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
+  .bloc-comediestar > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+  .bloc-comediestar.cta {
+    -webkit-transition: all 250ms;
+            transition: all 250ms; }
+    .bloc-comediestar.cta a:hover {
+      background-color: rgba(0, 0, 0, 0.25); }
   .bloc-comediestar.green {
     background-color: #3ab596;
     background-image: none; }
@@ -4963,7 +5001,7 @@ form textarea {
 @media only screen and (max-width: 640px) {
   .bloc-soumission, .bloc-comediestar {
     padding: 40px;
-    height: auto; } }
+    height: 320px; } }
 
 
 /*# sourceMappingURL=maps/comediestar.css.map */

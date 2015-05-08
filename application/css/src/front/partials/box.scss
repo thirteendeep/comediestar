@@ -9,7 +9,26 @@
     background-image: url('/application/images/box-comediestar.png');
     background-position: center top;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:cover; 
+    position:relative;
+
+    > a {
+        position: absolute;
+        width: 100%;
+        height:100%;
+        left:0;
+        top:0;
+
+
+    }
+
+    &.cta {
+        transition: all 250ms;
+        a:hover {
+            background-color:rgba(0, 0, 0, .25);
+        }
+    }
+
     &.green {
         background-color:#3ab596;
         background-image:none;
@@ -76,6 +95,6 @@
     .bloc-soumission,
     .bloc-comediestar {
         padding:40px;
-        height: auto;
+        height: 320px;
     }
 }

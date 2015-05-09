@@ -20,7 +20,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('css', function() {
-    rs('build-clean-css', 'sass');
+    rs('sass');
 });
 
 gulp.task('js', function() {

@@ -14,7 +14,7 @@
             <br>
             <br>
 
-            <h2 class="title_page">
+            <h2 class="title_page margin-bottom-mobile">
                 <strong>
                     BESOIN D'UN ARTISTE POUR UN ÉVÉNEMENT?
                 </strong>

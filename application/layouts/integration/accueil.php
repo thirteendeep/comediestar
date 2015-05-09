@@ -12,8 +12,9 @@
                 ?>
                 <li>
                     <article>
-                        <a href="<?php echo $ville['nom']; ?>">
+                        <a href="/ville/<?php echo $key; ?>">
                             <img src="/application/images/villes/<?php echo $key; ?>.png" alt="<?php echo $ville['nom']; ?>">
+                            <img src="/application/images/villes/<?php echo $key; ?>-hover.png" alt="<?php echo $ville['nom']; ?>">
                         </a>
                         <h2 class="title_section">
                             <a href="<?php echo $ville['nom']; ?>"><?php echo $ville['nom']; ?></a>

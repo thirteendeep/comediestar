@@ -5,7 +5,7 @@ $villes = array(
         'salle' => "L'Étoile Banque Nationale",
         'date' => "15 juin 2015",
         'animateur' => "Phil Laprise",
-        'image_animateur' => "image/artistes/animateur-philippe.png",
+        'image_animateur' => "image/artistess/animateur-philippe.png",
         'billetterie' => array(
             'nom' => "L'Étoile Banque Nationale",
             'logo' => "image/logo/brossard.png",
@@ -17,27 +17,27 @@ $villes = array(
             array(
                 'nom' => "Groulx",
                 'prenom' => "Patrick",
-                'image' => "images/artistes/patrick-groulx.png"
+                'image' => "/application/images/galas/artistes/patrick-groulx.png"
             ),
             array(
                 'nom' => "wagner",
                 'prenom' => "Guillaume",
-                'image' => "images/artistes/guillaume-wagner.png"
+                'image' => "/application/images/galas/artistes/guillaume-wagner.png"
             ),
             array(
                 'nom' => "Wagner",
                 'prenom' => "Guillaume",
-                'image' => "images/artistes/guillaume-wagner.png"
+                'image' => "/application/images/galas/artistes/guillaume-wagner.png"
             ),
             array(
                 'nom' => "Grenier",
                 'prenom' => "Daniel",
-                'image' => "images/artistes/daniel-grenier.png"
+                'image' => "/application/images/galas/artistes/daniel-grenier.png"
             ),
             array(
                 'nom' => "Gélinas",
                 'prenom' => "Jean-Claude",
-                'image' => "images/artistes/jean-claude-gelinas.png"
+                'image' => "/application/images/galas/artistes/jean-claude-gelinas.png"
             ),
         )
     ),
@@ -58,22 +58,22 @@ $villes = array(
             array(
                 'nom' => "Barrette",
                 'prenom' => "Alexandre",
-                'image' => "images/artistes/alex-barette.png"
+                'image' => "/application/images/galas/artistes/alex-barette.png"
             ),
             array(
                 'nom' => "Leblanc",
                 'prenom' => "Simon",
-                'image' => "images/artistes/simon-leblanc.png"
+                'image' => "/application/images/galas/artistes/simon-leblanc.png"
             ),
             array(
                 'nom' => "Confirmer",
-                'prenom' => "Artiste à",
-                'image' => "images/artistes/confirmer-gars.png"
+                'prenom' => "Artistes à",
+                'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
             array(
                     'nom' => "Confirmer",
-                'prenom' => "Artiste à",
-                'image' => "images/artistes/confirmer-gars.png"
+                'prenom' => "Artistes à",
+                'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
         )
     ),
@@ -94,22 +94,22 @@ $villes = array(
             array(
                 'nom' => "Jean",
                 'prenom' => "Mario",
-                'image' => "images/artistes/mario-jean.png"
+                'image' => "/application/images/galas/artistes/mario-jean.png"
             ),
             array(
                 'nom' => "Béland",
                 'prenom' => "Réal",
-                'image' => "images/artistes/real-beland.png"
+                'image' => "/application/images/galas/artistes/real-beland.png"
             ),
             array(
                 'nom' => "Leblanc",
                 'prenom' => "Simon",
-                'image' => "images/artistes/simon-leblanc.png"
+                'image' => "/application/images/galas/artistes/simon-leblanc.png"
             ),
             array(
                     'nom' => "Confirmer",
-                'prenom' => "Artiste à",
-                'image' => "images/artistes/confirmer-gars.png"
+                'prenom' => "Artistes à",
+                'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
         )
     ),
@@ -118,7 +118,7 @@ $villes = array(
         'salle' => "Centre Culturel de l’Université de Sherbrooke",
         'date' => "24 mars 2016",
         'animateur' => "À Confirmer",
-        'image_animateur' => "image/artistes/animateur-confirmer.png",
+        'image_animateur' => "image/artistess/animateur-confirmer.png",
         'billetterie' => array(
             'nom' => "Centre Culturel de l’Université de Sherbrooke",
             'logo' => "image/logo/sherbrooke.png",
@@ -130,63 +130,28 @@ $villes = array(
             array(
                 'nom' => "Barrette",
                 'prenom' => "Alexandre",
-                'image' => "images/artistes/alex-barette.png"
+                'image' => "/application/images/galas/artistes/alex-barette.png"
             ),
             array(
                 'nom' => "Leblanc",
                 'prenom' => "Simon",
-                'image' => "images/artistes/simon-leblanc.png"
+                'image' => "/application/images/galas/artistes/simon-leblanc.png"
             ),
             array(
                 'nom' => "Confirmer",
-                'prenom' => "Artiste à",
-                'image' => "images/artistes/confirmer-gars.png"
+                'prenom' => "Artistes à",
+                'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
             array(
                     'nom' => "Confirmer",
-                'prenom' => "Artiste à",
-                'image' => "images/artistes/confirmer-gars.png"
+                'prenom' => "Artistes à",
+                'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
         )
     )
 );
 
 
-/*
- public function sendmessageAction()
-    {
-        $name = $this->params()->fromPost('fullname');
-        $email = $this->params()->fromPost('email');
-        $telephone = $this->params()->fromPost('telephone');
-        $poste = $this->params()->fromPost('tel-poste');
-        $compagnie = $this->params()->fromPost('compagnie');
-        $date = $this->params()->fromPost('date');
-        $moment = $this->params()->fromPost('moment');
-        $N = count($moment);
-        $moment_string = '';
-        for($i=0; $i < $N; $i++) {
-            $moment_string .= $moment[$i];
-        }
-
-        if(!empty($name) && !empty($email) && !empty($telephone)){
 
 
-            $headers = "Content-type: text/html; charset=UTF-8\r\n"; 
-
-            $subject = 'Formulaire de service - Site web Globalia.ca';
-            $body = "Quelqu'un désire contacter Globalia. Voici ses informations : <br /><br />
-                Nom complet : <b>$name</b><br />
-                Courriel : <b>$email</b><br />
-                Telephone : <b>".(empty($telephone)?'--':$telephone)."</b><br />
-                Poste : <b>".$poste."</b><br />
-                Compagnie : <b>$compagnie</b><br />
-                Date : <b>$date</b><br />
-                Moment : <b>$moment_string</b><br />";
-
-            mail($this->servicesMail, $subject, $body, $headers);
-            //mail("rossc@globalia.ca", $subject, $body, $headers);
-            
-            //echo $status_code . " " . $response;
-            echo $this->translate('Your message was successfully sent to Globalia.');
-			*/
 ?>

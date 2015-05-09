@@ -25,6 +25,12 @@ h5, .h5 {
     strong {
         font-size: 1.786rem;
     }
+    &.small {
+        font-size:18px;
+        strong {
+            font-size: 18px;
+        }
+    }
 }
 .title_section {
     color:#666666;
@@ -33,6 +39,12 @@ h5, .h5 {
     line-height: 1;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 640px) {
+    .margin-bottom-mobile {
+        margin-bottom: 20px;
+    }    
+}
+
 
 em {
     font-style: normal;
@@ -46,6 +58,7 @@ em {
 p {
     line-height: em(22);
     color:#61606b;
+    font-weight: 300;
 }
 ul {
     padding:0;
@@ -80,6 +93,30 @@ a {
         color:#add700;
         &:hover {
             color: #1768b3;
+        }
+    }
+}
+
+.contact-sando {
+    * {
+        display: block;
+    }
+    span {
+        font-size:18px;
+        font-weight: 300; 
+        a {
+            color:#666;
+            font-weight:300;
+            &:hover {
+                color:#3ab596;
+            }
+        }
+    }
+    a {
+        font-weight: bold;
+        color:#666;
+        &:hover {
+            color:#3ab596;
         }
     }
 }

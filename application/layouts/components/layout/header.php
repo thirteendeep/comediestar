@@ -1,4 +1,7 @@
-<div class="header_container <?php echo ($content != "accueil") ? "tiny" : ""; ?>">
+<div class="header_container 
+    <?php echo ($content != "accueil") ? "tiny" : "";?> 
+    <?php echo ($content == "ville") ? "ville" : "";?> 
+">
     <div class="row">
         <div class="large-12 column">
             <header>
@@ -7,10 +10,11 @@
                     <ul class="barre_technique">
                         <li>
                             <select>
+                                <option value="0">Choisir une ville</option>
                                 <?php
                                 foreach ($villes as $key => $ville) {
                                     ?>
-                                    <option>
+                                    <option value="<?=$key;?>" <?php echo ($key == @$_GET['ville']) ? "selected" : ""; ?>>
                                         <?= $ville['nom']; ?>
                                     </option>
                                     <?php
@@ -55,7 +59,23 @@
                     <em>Comédie Star part enfin en tournée à travers le Québec.</em>
                     <strong>5 humoristes vedettes. 1 seul soir.</strong>
                 </div>
+                <?php
+
+                if (isset($_GET['ville'])) {
+                    $ville = $_GET['ville'];
+                ?>
+                <div class="container-ville">
+                    <h3 class="title_page"><?= $villes[$ville]['nom']; ?></h3>
+                    <span>
+                        <?= $villes[$ville]['salle']; ?>
+                    </span>
+                </div>
+                <?php
+                }
+                ?>
             </header>
+            
         </div>
+
     </div>
 </div>

@@ -17,6 +17,8 @@ form {
         padding:em(10);
         margin-top: em(7);
         font-size:12px;
+        -webkit-appearance:none;
+        border-radius: 0;
 
         &.parsley-error {
             background-color: #f7e2e2;
@@ -42,6 +44,10 @@ form {
     textarea {
         min-height: 120px;
     }
+     input[type=submit] {
+        margin-top:20px;
+        margin-bottom:30px;
+    }
 }
 
 .submit-box{
@@ -55,3 +61,41 @@ form {
 }
 
 
+#confirmation-form-contact {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background:#fff;
+    padding-bottom:20px;
+    opacity: 0;
+    transition: all 250ms;
+    display: none;
+
+    .open {
+        display: block;
+        opacity: 1;
+    }
+    
+    z-index:1;
+    .table {
+        border:1px solid #e5e5e5;
+        text-align: center;
+    }
+    div {
+        width: 100%;
+    }
+    h2 {
+        font-size:25px;
+        color:#3ab596;
+    }
+    p {
+        line-height: 2;
+    }
+    a {
+        color:#666666;
+
+    }
+
+
+
+}

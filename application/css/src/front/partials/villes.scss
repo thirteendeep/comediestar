@@ -12,7 +12,22 @@
         position: relative;
         padding-bottom:15px;
         
-        
+        > a {
+            img {
+                position: relative;
+                z-index:2;
+                transition: opacity 250ms;
+                opacity:1;
+            }
+            img:last-child {
+                position: absolute;
+                top:0;
+                left:0;
+                z-index: 1;
+
+            }
+
+        }
         
         &:after {
             content:"";
@@ -34,6 +49,11 @@
                 width: 100%;
                 transition: all 250ms;
                 opacity: 1;
+            }
+            > a {
+                img:first-child {
+                    opacity:0;
+                }
             }
         }
         img {
@@ -68,3 +88,94 @@
         }
     }
 }
+
+.listing-ville-block-grid {
+
+    h2 {
+
+    }
+    [class*="block-grid-"] {
+        li {
+            margin-bottom: 20px;
+        }
+        a,span,h3 {
+            display: block;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:#3ab596;
+        }
+        span {
+            color:#666666;
+
+        }
+        a.tel {
+            margin-top: 10px;
+            font-size:18px;
+            font-weight: 300;
+        }
+        a {
+            color:#666666;
+            font-weight: bold;
+            &:hover {
+                color:#3ab596;
+            }
+        }
+    }
+}
+
+
+
+
+#ville-selector {
+    width: 100%;
+    color:#fff;
+    background: #3ab596;
+    text-align: center;
+    position:relative;
+    cursor: pointer;
+    
+    i {
+        transition: 200ms ease-in-out;
+    }
+    &.open {
+        i {
+            transform: rotate(180deg);
+        }
+    }
+
+    
+    .title {
+        font-weight: bold;
+        line-height: 42px;
+    }
+
+    .circle {
+        position: absolute;
+        top:-30px;
+        left:50%;
+        margin-left: -32.5px;
+        width:65px;
+        height:30px;
+        border-radius: 65px 65px 0 0;
+        background:#3ab596;
+        i:before {
+            line-height: 33px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+    .villes {
+        display: none;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align:left;
+        a {
+            color:#fff;
+        }
+    }
+}
+

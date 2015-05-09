@@ -9,5 +9,6 @@ RewriteRule ^agence-comedie-star/?$ /index.php?section=integration&content=agenc
 RewriteRule ^les-galas/?$ /index.php?section=integration&content=galas [L]
 RewriteRule ^forfait-corporatif/?$ /index.php?section=integration&content=forfait [L]
 RewriteRule ^contactez-nous/?$ /index.php?section=integration&content=contact [L]
+RewriteRule ^ville/([^/]+)\/?$ /index.php?section=integration&content=ville&ville=$1 [L]
 
 RewriteRule ^([^/]+)/([^/]+)\/?$ /index.php?section=$1&content=$2 [L]

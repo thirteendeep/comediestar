@@ -34,5 +34,17 @@
         content: $fa-var-ticket;
         padding-right:5px;
     }
+
+    &.btn--socials {
+        width: 40px;
+        height: 40px;
+        padding:0;
+        line-height: 42px;
+        text-align: center;
+        background-color:#3ab596;
+        border-radius:2px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
     
 }

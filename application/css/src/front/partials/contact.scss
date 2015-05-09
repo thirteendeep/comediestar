@@ -1,0 +1,46 @@
+.contact {
+    form {
+        .row {
+            margin-top: 25px;
+        }
+    }
+    .infos {
+        a {
+
+        }
+        a.tel {
+            display: block;
+            font-size: 25px;
+            color:#666666;
+            font-weight: 300;  
+            text-transform: uppercase;
+            &:hover {
+                color:#3ab596;
+            }
+            &:before {
+                @include fa-icon();
+                content: $fa-var-phone;
+                font-style: 20px;
+                color:#3ab596;
+                padding-right:30px;
+            }
+        }
+        .email {
+            display: block;
+            font-size: 20px;
+            font-weight: 300;
+            color:#666666;
+            &:hover {
+                color:#3ab596;
+            }
+            &:before {
+                @include fa-icon();
+                content: $fa-var-envelope-o;
+                font-style: 20px;
+                color:#3ab596;
+                padding-right:30px;
+            }
+        }
+    }
+
+}

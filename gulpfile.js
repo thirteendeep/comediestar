@@ -72,6 +72,7 @@ gulp.task('scripts', function () {
             'application/js/src/vendor/parsley-fr.js',
             'application/js/src/vendor/parsley.min.js',
             'application/js/src/vendor/jquery.magnific-popup.js',
+            'application/js/src/plugins/jquery.ajaxchimp.js',
             'application/js/src/front/main.js',
     ])
     .on('error', console.error.bind(console))

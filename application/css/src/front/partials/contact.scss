@@ -44,3 +44,16 @@
     }
 
 }
+
+@media only screen and (max-width: 640px) {
+    .contact {
+        form {
+            .row {
+                margin-top: 0;
+                .columns {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

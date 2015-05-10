@@ -33,45 +33,52 @@
     </div>
 </div>
 <div class="bandeau-gala">
-    <div class="row">
-        <div class="medium-5 columns">
-            <div>Prochain Gala</div>
-            <div><?= $villes[$_GET['ville']]['date'] ?></div>
+    <div class="row" style="background-image:url('<?= $villes[$_GET['ville']]['image_animateur'] ?>')">
+        <div class="smal-12 medium-5 columns">
+            <div class="title_section">Prochain Gala</div>
+            <div class="title_section">
+                <strong><?= $villes[$_GET['ville']]['date'] ?></strong>
+            </div>
 
-            <div>
+            <div class="animation">
                 Animé par <br>
                 <span><?= $villes[$_GET['ville']]['animateur'] ?></span>
             </div>
 
             <div class="logo">
-                logo
+                <img src="<?= $villes[$_GET['ville']]['billetterie']['logo'] ?>" alt="<?= $villes[$_GET['ville']]['billetterie']['nom'] ?>">
             </div>
             <div class="billetterie">
                 <span>Billetterie</span>
-                <a href="#" class="tel"><?= $villes[$_GET['ville']]['billetterie']['phone'] ?></a> <br>
-                <a href="<?= $villes[$_GET['ville']]['billetterie']['phone'] ?>" target="_blank">Consulter le site web</a>
+                <a href="#" class="tel"><?= $villes[$_GET['ville']]['billetterie']['phone'] ?></a>
+                <a href="<?= $villes[$_GET['ville']]['billetterie']['url'] ?>" target="_blank">Consulter le site web <i class="fa fa-angle-double-right"></i></a>
             </div>
         </div>
-        <div class="large-7 columns">
-            <?php
-            foreach (array_reverse($villes[$_GET['ville']]['humoriste']) as $key => $humorsite) {
-                ?>
-                <div class="animateur">
-                    <img src="/application/images/galas/artistes/artiste_01.jpg">
-                    <span>
-                        <?= $humorsite['prenom']; ?>
-                        <strong>
-                            <?= $humorsite['nom']; ?>
-                        </strong>
-                    </span>
+        <div class="small-12 medium-7 columns">
+            <div class="clearfix">
+                <?php
+                foreach (array_reverse($villes[$_GET['ville']]['humoriste']) as $key => $humorsite) {
+                    ?>
+                    <div class="animateur">
+                        <img src="<?= $humorsite['image']; ?>">
+                        <span>
+                            <?= $humorsite['prenom']; ?>
+                            <strong>
+                                <?= $humorsite['nom']; ?>
+                            </strong>
+                        </span>
+                    </div>
+                    <?php } ?>
                 </div>
-            <?php } ?>
+                <div class="btn-container">
+                    <a href="<?= $villes[$_GET['ville']]['billetterie']['url'] ?>" target="_blank" class="btn btn--billet">Acheter vos billets</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-<?php
-include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_video_2.php');
-include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_vert_1.php');
-include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
+    <?php
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_video_2.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_vert_1.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
 

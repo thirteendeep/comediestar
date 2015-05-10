@@ -152,7 +152,7 @@
     .bandeau-video {
         .follow {
             text-align: left;
-            margin:30px 0 0 0;
+            /*margin:30px 0 0 0;*/
         }
     }
 }
@@ -289,6 +289,9 @@
             content: $fa-var-send-o;
         }
     }
+    .merci {
+        display: none;
+    }
     #{$all-text-inputs} {
         margin:0;
         background:#fff;
@@ -320,22 +323,107 @@
 
 
 .bandeau-gala {
-
-    
-    
-
     > .row {
         height: 330px;
         padding:30px 0;
-        background-image: url('/application/images/galas/animateur.png');
         background-repeat: no-repeat;
-        background-position: 125px bottom;
+        background-position: 185px bottom;
     }
-
+    .animation {
+        font-size:15px;
+        line-height: 18px;
+        font-weight: 300;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color:#666666;
+        span {
+            color:#ed494b;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
     .animateur {
         display: inline-block;
         width: 90px;
         float: right;
         margin-right:20px;
+        font-weight: 300;
+        color:#666666;
+        font-size: 15px;
+        line-height: 1;
+        strong {
+            color:#ed494b;
+            text-transform: uppercase;
+            display: block;
+        }
+        img {
+            padding-bottom: 10px;
+        }
+    }
+
+    .title_section {
+        strong {
+            color:#3ab596;
+        }
+    }
+    .billetterie {
+        margin-top: 10px;
+        font-size:14px;
+        color:#ed494b;
+        font-weight: bold;
+        text-transform: uppercase;
+        .tel {
+            font-weight: 300;
+            color:#666666;
+            font-size:18px;
+        }
+        a {
+            color: #666666;
+            font-weight: bold;
+            text-transform: none;
+
+        }
+        * {
+            display: block;
+        }
+        i {
+            display: inline-block;
+        }
     }
 }
+.btn-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+@media only screen and (max-width: 910px) {
+    .bandeau-gala {
+        > .row {
+            background:none !important;
+            height: auto;
+        }
+        .clearfix {
+            /*margin-top: 50px;*/
+        }
+        .animateur {
+            float: none;
+            margin-bottom: 20px;
+
+        }
+    }
+    .btn-container {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .bandeau-gala {
+        .clearfix {
+            margin-top: 50px;
+        }
+    }
+}
+ 

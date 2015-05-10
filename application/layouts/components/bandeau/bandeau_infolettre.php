@@ -1,22 +1,23 @@
 <div class="bandeau-infolettre">
     <div class="row">
-        <form action="" data-parsley-validate>
+        <div class="merci">Merci</div>
+        <form id="mc-form" action="" data-parsley-validate>
             <div class="medium-2 columns">
                 <span>
                     Infolettre
                 </span>
             </div>
             <div class="medium-2 columns">
-                <input type="text" placeholder="Prénom" required>
+                <input type="text" placeholder="Prénom" id="mce-FNAME" required>
             </div>
             <div class="medium-2 columns">
-                <input type="text" placeholder="Nom" required>
+                <input type="text" placeholder="Nom" id="mce-LNAME"required>
             </div>
             <div class="medium-2 columns">
-                <input type="text" placeholder="Ville" required>
+                <input type="text" placeholder="Ville"  id="mce-MMERGE5" required>
             </div>
             <div class="medium-2 columns">
-                <input type="email" placeholder="Courriel" required>
+                <input type="email" placeholder="Courriel" id="mce-EMAIL" required>
             </div>
             <div class="medium-2 columns">
                 <input type="submit" value="S'inscrire" class="btn btn--primary">

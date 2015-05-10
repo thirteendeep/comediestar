@@ -5,10 +5,10 @@ $villes = array(
         'salle' => "L'Étoile Banque Nationale",
         'date' => "15 juin 2015",
         'animateur' => "Phil Laprise",
-        'image_animateur' => "image/artistess/animateur-philippe.png",
+        'image_animateur' => "/application/images/galas/artistes/animateur-philippe.png",
         'billetterie' => array(
             'nom' => "L'Étoile Banque Nationale",
-            'logo' => "image/logo/brossard.png",
+            'logo' => "/application/images/galas/logo/brossard.png",
             'phone' => "450.676.1030",
             'url' => "http://www.letoilebanquenationale.ca/programmation_details.asp?Id=1896"
         ),
@@ -46,10 +46,10 @@ $villes = array(
         'salle' => "Théâtre Lionel-Groulx",
         'date' => "26 mars 2016",
         'animateur' => "À Confirmer",
-        'image_animateur' => "",
+        'image_animateur' => "/application/images/galas/artistes/animateur-confirmer.png",
         'billetterie' => array(
             'nom' => "Odyscène",
-            'logo' => "image/logo/ste-therese.png",
+            'logo' => "/application/images/galas/logo/ste-therese.png",
             'phone' => "450.434.4006 ",
             'url' => "http://www.odyscene.com/artist/876-gala-comedie-star.html"
         ),
@@ -58,7 +58,7 @@ $villes = array(
             array(
                 'nom' => "Barrette",
                 'prenom' => "Alexandre",
-                'image' => "/application/images/galas/artistes/alex-barette.png"
+                'image' => "/application/images/galas/artistes/alex-barrette.png"
             ),
             array(
                 'nom' => "Leblanc",
@@ -82,10 +82,10 @@ $villes = array(
         'salle' => "Théâtre Lionel-Groulx",
         'date' => "26 mars 2016",
         'animateur' => "Jean-Claude Gélinas",
-        'image_animateur' => "lalalal",
+        'image_animateur' => "/application/images/galas/artistes/animateur-jean-claude.png",
         'billetterie' => array(
             'nom' => "Théâtre Desjardins",
-            'logo' => "image/logo/lasalle.png",
+            'logo' => "/application/images/galas/logo/lasalle.png",
             'phone' => "819.820.1000",
             'url' => "http://theatredesjardins.com/spectacle/comedie-star-pierre-hebert-simon-leblanc-mario-jean-real-beland/"
         ),
@@ -107,7 +107,7 @@ $villes = array(
                 'image' => "/application/images/galas/artistes/simon-leblanc.png"
             ),
             array(
-                    'nom' => "Confirmer",
+                'nom' => "Confirmer",
                 'prenom' => "Artistes à",
                 'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
@@ -118,10 +118,10 @@ $villes = array(
         'salle' => "Centre Culturel de l’Université de Sherbrooke",
         'date' => "24 mars 2016",
         'animateur' => "À Confirmer",
-        'image_animateur' => "image/artistess/animateur-confirmer.png",
+        'image_animateur' => "/application/images/galas/artistes/animateur-confirmer.png",
         'billetterie' => array(
             'nom' => "Centre Culturel de l’Université de Sherbrooke",
-            'logo' => "image/logo/sherbrooke.png",
+            'logo' => "/application/images/galas/logo/sherbrooke.png",
             'phone' => "819.820.1000",
             'url' => "http://theatredesjardins.com/spectacle/comedie-star-pierre-hebert-simon-leblanc-mario-jean-real-beland/"
         ),
@@ -130,7 +130,7 @@ $villes = array(
             array(
                 'nom' => "Barrette",
                 'prenom' => "Alexandre",
-                'image' => "/application/images/galas/artistes/alex-barette.png"
+                'image' => "/application/images/galas/artistes/alex-barrette.png"
             ),
             array(
                 'nom' => "Leblanc",

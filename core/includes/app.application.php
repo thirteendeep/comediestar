@@ -3,7 +3,7 @@ $villes = array(
     'brossard' => array(
         'nom' => "Brossard",
         'salle' => "L'Étoile Banque Nationale",
-        'date' => "15 juin 2015",
+        'date' => "28 mai 2015",
         'animateur' => "Phil Laprise",
         'image_animateur' => "/application/images/galas/artistes/animateur-philippe.png",
         'billetterie' => array(
@@ -21,11 +21,6 @@ $villes = array(
             ),
             array(
                 'nom' => "wagner",
-                'prenom' => "Guillaume",
-                'image' => "/application/images/galas/artistes/guillaume-wagner.png"
-            ),
-            array(
-                'nom' => "Wagner",
                 'prenom' => "Guillaume",
                 'image' => "/application/images/galas/artistes/guillaume-wagner.png"
             ),
@@ -79,14 +74,14 @@ $villes = array(
     ),
     'lasalle' => array(
         'nom' => "LaSalle",
-        'salle' => "Théâtre Lionel-Groulx",
-        'date' => "26 mars 2016",
+        'salle' => "Théâtre Desjardins",
+        'date' => "28 novembre 2015",
         'animateur' => "Jean-Claude Gélinas",
         'image_animateur' => "/application/images/galas/artistes/animateur-jean-claude.png",
         'billetterie' => array(
             'nom' => "Théâtre Desjardins",
             'logo' => "/application/images/galas/logo/lasalle.png",
-            'phone' => "819.820.1000",
+            'phone' => "514.367.6373",
             'url' => "http://theatredesjardins.com/spectacle/comedie-star-pierre-hebert-simon-leblanc-mario-jean-real-beland/"
         ),
         'vedette' => true,
@@ -123,7 +118,7 @@ $villes = array(
             'nom' => "Centre Culturel de l’Université de Sherbrooke",
             'logo' => "/application/images/galas/logo/sherbrooke.png",
             'phone' => "819.820.1000",
-            'url' => "http://theatredesjardins.com/spectacle/comedie-star-pierre-hebert-simon-leblanc-mario-jean-real-beland/"
+            'url' => "http://www.centrecultureludes.ca/billet-spectacle/spectacles/gala-comedie-star/gala-comedie-star/24-03-2016-20-00.aspx"
         ),
         'vedette' => true,
         'humoriste' => array(

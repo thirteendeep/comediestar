@@ -35,7 +35,7 @@ gulp.task('local', ['css'], function(){
 
 /* Compile sass, sourcemap, prefix and min sass files */
 gulp.task('sass', function () {
-    gulp.src('application/css/src/front/'+projet+'.scss')
+    gulp.src(['application/css/src/front/'+projet+'.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass({errLogToConsole: true}))
     .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7", { cascade : true }))
@@ -73,6 +73,7 @@ gulp.task('scripts', function () {
             'application/js/src/vendor/parsley.min.js',
             'application/js/src/vendor/jquery.magnific-popup.js',
             'application/js/src/plugins/jquery.ajaxchimp.js',
+            'application/js/src/plugins/jquery.ajaxchimp.langs.js',
             'application/js/src/front/main.js',
     ])
     .on('error', console.error.bind(console))

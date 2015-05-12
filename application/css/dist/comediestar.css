@@ -4440,10 +4440,14 @@ a {
     padding: 7px 20px;
     background: #3ab596;
     border-radius: 3px; }
+    .btn.btn--primary:hover {
+      color: #fff; }
   .btn.btn--transparent {
     background: transprent;
     border: 1px solid #fff;
     border-radius: 3px; }
+    .btn.btn--transparent:hover {
+      color: #fff; }
   .btn.ticket:before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -4630,7 +4634,7 @@ a {
     display: none; }
   #mobile-nav {
     display: block;
-    background-image: url('/application/images/bg-contact.jpg');
+    background-image: url('/application/images/background_galas.png');
     background-position: center top;
     background-size: cover;
     position: relative; }
@@ -4639,7 +4643,9 @@ a {
       height: 185px; }
       #mobile-nav > header a {
         font-size: 36px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        position: relative;
+        top: 10px; }
         #mobile-nav > header a:before {
           display: inline-block;
           font: normal normal normal 14px/1 FontAwesome;
@@ -4655,6 +4661,9 @@ a {
         width: 168px;
         float: right;
         margin-right: 20px; }
+    #mobile-nav > .row {
+      text-align: center;
+      padding-bottom: 30px; }
     #mobile-nav .main-nav {
       width: 100%;
       height: auto;
@@ -4678,6 +4687,8 @@ a {
         overflow: hidden;
         margin-bottom: 10px; }
         #mobile-nav .main-nav header a:first-child {
+          position: relative;
+          top: 10px;
           float: left;
           font-size: 36px;
           margin-left: 20px;
@@ -4694,6 +4705,8 @@ a {
                     transform: translate(0, 0);
             content: "\f00d"; }
         #mobile-nav .main-nav header a {
+          position: relative;
+          top: 10px;
           padding-top: 10px;
           float: right;
           font-size: 20px;
@@ -4796,7 +4809,9 @@ footer {
 
 @media only screen and (max-width: 640px) {
   footer {
-    text-align: center; }
+    padding: 10px 0;
+    text-align: center;
+    line-height: 11px; }
     footer .columns:first-child {
       text-align: center; } }
 
@@ -4868,10 +4883,10 @@ form input[type=submit] {
 #confirmation-form-contact {
   width: 100%;
   height: 100%;
-  position: absolute;
   background: #fff;
   padding-bottom: 20px;
-  opacity: 0;
+  opacity: 1;
+  position: absolute;
   -webkit-transition: all 250ms;
           transition: all 250ms;
   display: none;
@@ -4997,6 +5012,8 @@ form input[type=submit] {
   padding: 3.57143em 0;
   color: #61606b;
   background-color: #ededed; }
+  .bandeau-video .column, .bandeau-video .columns {
+    overflow: hidden; }
   .bandeau-video .btn {
     margin-top: 20px; }
   .bandeau-video .follow {
@@ -5072,6 +5089,7 @@ form input[type=submit] {
     width: 100%;
     border: 0;
     background-color: #33ad8d;
+    border: 1px solid #33ad8d;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     padding: 0.71429em;
@@ -5088,7 +5106,16 @@ form input[type=submit] {
       color: #fff; }
     .bandeau-fanclub form input[type="color"].parsley-error, .bandeau-fanclub form input[type="date"].parsley-error, .bandeau-fanclub form input[type="datetime"].parsley-error, .bandeau-fanclub form input[type="datetime-local"].parsley-error, .bandeau-fanclub form input[type="email"].parsley-error, .bandeau-fanclub form input[type="month"].parsley-error, .bandeau-fanclub form input[type="number"].parsley-error, .bandeau-fanclub form input[type="password"].parsley-error, .bandeau-fanclub form input[type="search"].parsley-error, .bandeau-fanclub form input[type="tel"].parsley-error, .bandeau-fanclub form input[type="text"].parsley-error, .bandeau-fanclub form input[type="time"].parsley-error, .bandeau-fanclub form input[type="url"].parsley-error, .bandeau-fanclub form input[type="week"].parsley-error, .bandeau-fanclub form textarea.parsley-error, .bandeau-fanclub form select.parsley-error {
       background-color: #f7e2e2;
-      border: 1px solid #e53030; }
+      border: 1px solid #e53030;
+      color: #000; }
+      .bandeau-fanclub form input[type="color"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="date"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="datetime"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="datetime-local"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="email"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="month"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="number"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="password"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="search"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="tel"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="text"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="time"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="url"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form input[type="week"].parsley-error::-webkit-input-placeholder, .bandeau-fanclub form textarea.parsley-error::-webkit-input-placeholder, .bandeau-fanclub form select.parsley-error::-webkit-input-placeholder {
+        color: #000; }
+      .bandeau-fanclub form input[type="color"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="date"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="datetime"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="datetime-local"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="email"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="month"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="number"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="password"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="search"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="tel"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="text"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="time"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="url"].parsley-error:-moz-placeholder, .bandeau-fanclub form input[type="week"].parsley-error:-moz-placeholder, .bandeau-fanclub form textarea.parsley-error:-moz-placeholder, .bandeau-fanclub form select.parsley-error:-moz-placeholder {
+        color: #000; }
+      .bandeau-fanclub form input[type="color"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="date"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="datetime"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="datetime-local"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="email"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="month"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="number"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="password"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="search"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="tel"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="text"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="time"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="url"].parsley-error::-moz-placeholder, .bandeau-fanclub form input[type="week"].parsley-error::-moz-placeholder, .bandeau-fanclub form textarea.parsley-error::-moz-placeholder, .bandeau-fanclub form select.parsley-error::-moz-placeholder {
+        color: #000; }
+      .bandeau-fanclub form input[type="color"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="date"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="datetime"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="datetime-local"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="email"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="month"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="number"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="password"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="search"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="tel"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="text"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="time"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="url"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form input[type="week"].parsley-error:-ms-input-placeholder, .bandeau-fanclub form textarea.parsley-error:-ms-input-placeholder, .bandeau-fanclub form select.parsley-error:-ms-input-placeholder {
+        color: #000; }
   .bandeau-fanclub form .parsley-errors-list {
     display: none; }
   .bandeau-fanclub form .submit-container {
@@ -5120,7 +5147,8 @@ form input[type=submit] {
 
 .bandeau-infolettre {
   padding: 10px 0;
-  border-top: 1px solid #e6e6e6; }
+  border-top: 1px solid #e6e6e6;
+  min-height: 54px; }
   .bandeau-infolettre span {
     display: block;
     width: 100%;
@@ -5141,7 +5169,7 @@ form input[type=submit] {
               transform: translate(0, 0);
       content: "\f1d9"; }
   .bandeau-infolettre .merci {
-    display: none; }
+    line-height: 33px; }
   .bandeau-infolettre input[type="color"], .bandeau-infolettre input[type="date"], .bandeau-infolettre input[type="datetime"], .bandeau-infolettre input[type="datetime-local"], .bandeau-infolettre input[type="email"], .bandeau-infolettre input[type="month"], .bandeau-infolettre input[type="number"], .bandeau-infolettre input[type="password"], .bandeau-infolettre input[type="search"], .bandeau-infolettre input[type="tel"], .bandeau-infolettre input[type="text"], .bandeau-infolettre input[type="time"], .bandeau-infolettre input[type="url"], .bandeau-infolettre input[type="week"], .bandeau-infolettre textarea, .bandeau-infolettre select {
     margin: 0;
     background: #fff;
@@ -5150,6 +5178,9 @@ form input[type=submit] {
     margin: 0; }
 
 @media only screen and (max-width: 640px) {
+  .bandeau-infolettre .merci {
+    display: none;
+    line-height: 1; }
   .bandeau-infolettre span {
     text-align: center; }
   .bandeau-infolettre .columns {

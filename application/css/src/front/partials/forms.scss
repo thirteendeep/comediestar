@@ -64,10 +64,10 @@ form {
 #confirmation-form-contact {
     width: 100%;
     height: 100%;
-    position:absolute;
     background:#fff;
     padding-bottom:20px;
-    opacity: 0;
+    opacity: 1;
+    position:absolute;
     transition: all 250ms;
     display: none;
 

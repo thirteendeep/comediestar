@@ -15,7 +15,7 @@
             <em>
                 Nous offrons des forfaits corporatifs à partir de seulement 350$
             </em>
-            <a href="" class="btn btn--transparent ticket">Renseignez-vous</a>
+            <a href="/forfait-corporatif" class="btn btn--transparent ticket">Renseignez-vous</a>
         </div>
     </div>
 </div>

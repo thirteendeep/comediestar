@@ -12,7 +12,7 @@
                         <h3><?= $ville['nom']; ?></h3>
                         <span><?= $ville['salle']; ?></span>
                         <a href="tel:<?= $ville['billetterie']['phone'] ?>" class="tel"><?= $ville['billetterie']['phone'] ?></a>
-                        <a href="<?= $ville['billetterie']['url']; ?>">Consulter le site web <i class="fa fa-angle-double-right"></i></a>
+                        <a href="<?= $ville['billetterie']['url']; ?>" target="blank">Consulter le site web <i class="fa fa-angle-double-right"></i></a>
                     </article>
                 </li>
                 <?php

@@ -31,20 +31,23 @@
             </ul>
         </div>
         <div class="medium-6 large-6 columns">
-            <form action="">
+            <div class="merci">
+                
+            </div>
+            <form action="" id="mc-form" data-parsley-validate>
                 <div class="row">
                     <div class="small-6 columns">
-                        <input type="text" placeholder="Prénom">
+                        <input type="text" placeholder="Prénom" name="FNAME" id="mce-FNAME" required>
                     </div>
                     <div class="small-6 columns">
-                        <input type="text" placeholder="Nom">
+                        <input type="text" placeholder="Nom" name="LNAME" id="mce-LNAME"required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="small-12 column">
-                        <input type="text" placeholder="Ville">
+                        <input type="text" placeholder="Ville" name="MMERGE5" id="mce-MMERGE5" required>
                         <div class="submit-container">
-                            <input type="email" placeholder="Courriel">
+                            <input type="email" placeholder="Courriel" name="EMAIL" id="mce-EMAIL" required>
                             <button type="submit"></button> 
                         </div>
                     </div>

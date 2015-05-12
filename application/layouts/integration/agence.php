@@ -59,34 +59,14 @@
     </div>
     <div class="large-4  columns">
         <div class="row small-collapse">
-            <div class="small-12 medium-6 large-12 columns">
-                <div class="bloc-comediestar green table">
-                    <div>
-                        <i class="fa fa-quote-right"></i>
-                        <span>
-                            Pour faire une soumission
-                        </span>
-                        <a href="tel:5148518226" class="tel">514.851.8226</a>
-                        <a href="mailto:info@comediestar.ca" class="email">info@comediestar.ca</a>
-                    </div>
-                </div>
-            </div>
-            <div class="small-12 medium-6 large-12 columns">
-                <div class="bloc-comediestar table">
-                    <div>
-                        <i class="fa fa-microphone"></i>
-                        <span>
-                            Plus qu’une agence...
-                            <strong>Découvrez les galas</strong>
-                            comédie star
-                        </span>
-                        <a href="#">Plus de détails</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+          <?php
+          include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/box/box_soumission.php');
+          include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/box/box_agence.php');
+          ?>
+          
+      </div>
+  </div>
 </div>
 <?php
-    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
+include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
 ?>

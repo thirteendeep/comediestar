@@ -33,7 +33,7 @@
     </div>
     <div class="row">
         <div class="large-12 column text-center">
-            <a href="#" class="btn btn--primary">Voir plus</a>
+            <a href="https://www.youtube.com/user/comediestar" class="btn btn--primary" target="_blank">Voir plus</a>
         </div>
     </div>
 </div>

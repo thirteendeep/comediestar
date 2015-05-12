@@ -7,8 +7,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
 <head>
     <meta charset="utf-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Comédie Star</title>
-    <meta name="description" content="" />
+    <title><?= $title ?></title>
+    <meta name="description" content="Les Galas Comédie Star sont des spectacles d’humour mettant en vedette des humoristes de la relève, les plus grands humoristes Québecois et aussi des vedettes internationales. " />
     
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,11 +16,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
     <!-- CSS -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/application/css/dist/comediestar.css" />
-    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
     <!-- Open Graph -->
     <meta property="og:title" content="Comedie Star - En tournée" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.comediestar.ca/" />
+    <meta property="og:url" content="http://dev.comediestar.ca/" />
     <meta property="og:image" content="http://www.comediestar.ca/application/images/comediestar-sharing.png" />
     <meta property="og:description" content="Les Galas Comédie Star sont des spectacles d’humour mettant en vedette des humoristes de la relève, les plus grands humoristes Québecois et aussi des vedettes internationales. " />
     <meta property="og:site_name" content="Comédie Star" />
@@ -70,4 +69,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
 
             </script>
         </body>
-        </html>
+    </html>

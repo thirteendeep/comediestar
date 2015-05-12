@@ -22,11 +22,17 @@
         padding: 7px 20px;
         background:#3ab596;
         border-radius: 3px;
+        &:hover {
+            color:#fff;
+        }
     }
     &.btn--transparent {
         background:transprent;
         border:1px solid #fff;
         border-radius: 3px;
+        &:hover {
+            color:#fff;
+        }
     }
 
     &.ticket:before {

@@ -99,6 +99,7 @@
             font-size:18px;
             line-height: 1.2;
         }
+
     }
 }
 
@@ -119,6 +120,11 @@
     padding:em(50) 0;
     color:#61606b;
     background-color:#ededed;
+    
+    .column,
+    .columns {
+        overflow: hidden;
+    }
 
     .btn {
         margin-top: 20px;
@@ -210,6 +216,7 @@
             width: 100%;
             border:0;
             background-color:#33ad8d;
+            border:1px solid #33ad8d;
             color:#fff;
             font-family: 'Open Sans', sans-serif;
             padding:em(10);
@@ -233,7 +240,23 @@
             &.parsley-error {
                 background-color: #f7e2e2;
                 border: 1px solid #e53030;
+                color:#000;
+
+                &::-webkit-input-placeholder {
+                    color:#000;
+                }
+                &:-moz-placeholder {
+                    color:#000;
+                }
+                &::-moz-placeholder {
+                    color:#000;
+                }
+                &:-ms-input-placeholder { 
+                    color:#000;
+                }
+
             }
+
         }
         .parsley-errors-list {
             display: none;
@@ -274,6 +297,7 @@
 .bandeau-infolettre {
     padding:10px 0;
     border-top:1px solid #e6e6e6;
+    min-height: 54px;
 
     span {
         display: block;
@@ -290,7 +314,7 @@
         }
     }
     .merci {
-        display: none;
+        line-height: 33px;
     }
     #{$all-text-inputs} {
         margin:0;
@@ -306,17 +330,21 @@
 
 @media only screen and (max-width: 640px) {
     .bandeau-infolettre {
-        span {
-            text-align: center;
-        }
-        .columns {
-            margin-bottom: 20px;
-
-        }
-        .columns:last-child {
-            text-align: right;
-        }
+       .merci {
+        display: none;
+        line-height: 1;
     }
+    span {
+        text-align: center;
+    }
+    .columns {
+        margin-bottom: 20px;
+
+    }
+    .columns:last-child {
+        text-align: right;
+    }
+}
 }
 
 
@@ -426,4 +454,3 @@
         }
     }
 }
- 

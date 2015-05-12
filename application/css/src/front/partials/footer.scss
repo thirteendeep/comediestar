@@ -20,7 +20,9 @@ footer {
 
 @media only screen and (max-width: 640px) {
     footer {
+        padding: 10px 0;
         text-align: center;
+        line-height: 11px;
         .columns:first-child {
             text-align: center;
         }

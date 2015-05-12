@@ -11923,12 +11923,13 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
     $.ajaxChimp = {
         responses: {
+
             'We have sent you a confirmation email'                                             : 0,
-            'Please enter a value'                                                              : 1,
-            'An email address must contain a single @'                                          : 2,
-            'The domain portion of the email address is invalid (the portion after the @: )'    : 3,
-            'The username portion of the email address is invalid (the portion before the @: )' : 4,
-            'This email address looks fake or invalid. Please enter a real email address'       : 5
+            'S\'il vous plaît entrer une valeur'                                                            : 1,
+            'Une adresse e-mail doit contenir un seul @'                                          : 2,
+            'La partie domaine de l\'adresse e-mail n\'est pas valide (la partie après le @:)'    : 3,
+            'La partie nom d\'utilisateur de l\'adresse email n\'est pas valide (la partie avant le signe @:)' : 4,
+            'Cette adresse e-mail semble faux ou non valides. S\'il vous plaît entrer une adresse email valide'       : 5
         },
         translations: {
             'en': null
@@ -12039,6 +12040,76 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
     };
 })(jQuery);
 
+(function ($) {
+    'use strict';
+
+    // ISO-693-1 Language codes: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+
+    // Submit Message
+    // 'submit': 'Submitting...'
+
+    // Mailchimp Responses
+    // 0: 'We have sent you a confirmation email'
+    // 1: 'Please enter a value'
+    // 2: 'An email address must contain a single @'
+    // 3: 'The domain portion of the email address is invalid (the portion after the @: )'
+    // 4: 'The username portion of the email address is invalid (the portion before the @: )'
+    // 5: 'This email address looks fake or invalid. Please enter a real email address'
+
+    $.ajaxChimp.translations = {
+        // Translation via https://github.com/lifeisfoo
+        'it': {
+            'submit': 'Registrazione in corso...',
+            0: 'Ti abbiamo inviato una mail di conferma',
+            1: 'Per favore inserisci una mail',
+            2: 'Un indirizzo valido contiene una sola @',
+            3: 'Il dominio della tua mail non è valido (la porzione dopo la @: )',
+            4: 'Il nome della mail non è valido (la porzione prima della @: )',
+            5: 'L\'indirizzo email sembra finto o non valido: per favore inseriscine uno reale'
+        },
+        // Translation via https://github.com/Cube42
+        'de': {
+            'submit': 'Senden...',
+            0: 'Wir haben Ihnen eine Bestätigungs-E-Mail geschickt',
+            1: 'Bitte geben Sie Ihre E-Mail-Adresse ein',
+            2: 'Eine E-Mail-Adresse muss ein @ enthalten',
+            3: 'Der Domain-Teil der E-Mail-Adresse ist ungültig (der Teil nach dem @)',
+            4: 'Der Benutzername der E-Mail-Adresse ist ungültig (der Teil vor dem @)',
+            5: 'Diese E-Mail-Adresse scheint gefälscht oder ungültig zu sein. Bitte geben Sie eine echte E-Mail-Adresse an!'
+        },
+        // Translation via https://github.com/designorant
+        'pl': {
+            'submit': 'Wysyłanie...',
+            0: 'Email z potwierdzeniem został wysłany',
+            1: 'Proszę podać adres email',
+            2: 'Adres email musi zawierać jeden znak @',
+            3: 'Część adresu z domeną jest niepoprawna (część po znaku @: )',
+            4: 'Część adresu z użytkownikiem jest niepoprawna (część przed znakiem @: )',
+            5: 'Ten adres wygląda na nieprawdziwy lub niepoprawny. Proszę podać prawdziwy adres email.'
+        },
+        // The translations below are from google translate, and may not be accurate.
+        // Pull requests with translations for other languages as well as corrections are welcome.
+        'es': {
+            'submit': 'Grabación en curso...',
+            0: 'Te hemos enviado un email de confirmación',
+            1: 'Por favor, introduzca un valor',
+            2: 'Una dirección de correo electrónico debe contener una sola @',
+            3: 'La parte de dominio de la dirección de correo electrónico no es válida (la parte después de la @:)',
+            4: 'La parte de usuario de la dirección de correo electrónico no es válida (la parte antes de la @:)',
+            5: 'Esta dirección de correo electrónico se ve falso o no válido. Por favor, introduce una dirección de correo electrónico real'
+        },
+        'fr': {
+            'submit': 'Enregistrement en cours...',
+            0: 'Nous vous avons envoyé un e-mail de confirmation',
+            1: 'S\'il vous plaît entrer une valeur',
+            2: 'Une adresse e-mail doit contenir un seul @',
+            3: 'La partie domaine de l\'adresse e-mail n\'est pas valide (la partie après le @:)',
+            4: 'La partie nom d\'utilisateur de l\'adresse email n\'est pas valide (la partie avant le signe @:)',
+            5: 'Cette adresse e-mail semble faux ou non valides. S\'il vous plaît entrer une adresse email valide'
+        }
+    };
+})(jQuery);
+
 $(document).ready(function() {
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
@@ -12054,78 +12125,112 @@ $(document).ready(function() {
 
 
     $('#form-contact').submit(function(e) {
+        var height = $(this).find(".form").height();
+        $('#confirmation-form-contact').height(height-20);
         e.preventDefault();
         
         var form = $(this);
         
         if(form.parsley().isValid()) {
-         var url = "/application/layouts/php/mail.php"; 
+           var url = "/application/layouts/php/mail.php"; 
 
-         $.ajax({
-             type: "POST",
-             url: url,
-             data: form.serialize(), 
-             success: function(data)
-             {
-                 if (data == "true") {
-
-                 }
-             }
-         });
-
-     }
-
-     return false;
-
-
-
- })
-
-    $('.barre_technique select').change(function() {
-        var ville = $(this).val();
-        if (ville != 0) {
-            document.location.href = "/ville/" + ville;
-        }
-    });
-
-    $('.bloc-comediestar.cta').click(function() {
-        $(this).find("> a").trigger("click");
-    })
-
-
-    $('#ville-selector').click(function() {
-        $(this).find(".villes").slideToggle();
-        $(this).toggleClass("open");
-    });
-
-    $('.open-menu').click(function(e) {
-        e.preventDefault();
-        $('#mobile-nav .main-nav').fadeIn();
-    });
-    $('.close-menu').click(function(e) {
-        e.preventDefault();
-        $('#mobile-nav .main-nav').fadeOut();
-    });
-
-    $('.choose-ville > a').click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass("open");
-        $('.choose-ville ul').slideToggle();
-    });
-
-    $('#mc-form').submit(function(e) {
-        e.preventDefault();
-
-        $('#mc-form').ajaxChimp({
-            url: '//comediestar.us6.list-manage.com/subscribe/post?u=ca0bb0d7a377d38cb3c3c5018&amp;id=caacce3de5',
-            callback: callbackFunction
+           $.ajax({
+               type: "POST",
+               url: url,
+               data: form.serialize(), 
+               success: function(data)
+               {
+                   if (data == "true") {
+                    $('#form-contact .form').animate({opacity : 0}, function() {
+                        $('#form-contact .form [type="text"], #form-contact .form textarea, #form-contact .form [type="email"]').each(function(index, element) {
+                            $(element).val("");
+                        });
+                        $('#confirmation-form-contact').fadeIn();
+                    });
+                }
+            }
         });
-    })
-    function callbackFunction (resp) {
-        console.log(resp);
-        if (resp.result === 'success') {
-        }
+
+       }
+
+       return false;
+
+
+
+   });
+
+$('#back2form').click(function() {
+    $('#confirmation-form-contact').fadeOut(250, function() {
+       $('#form-contact .form').animate({opacity : 1}, 250);
+   });
+})
+
+$('.barre_technique select').change(function() {
+    var ville = $(this).val();
+    if (ville != 0) {
+        document.location.href = "/ville/" + ville;
     }
+});
+
+$('.bloc-comediestar.cta').click(function() {
+    $(this).find("> a").trigger("click");
+})
+
+
+$('#ville-selector').click(function() {
+    $(this).find(".villes").slideToggle();
+    $(this).toggleClass("open");
+});
+
+$('.open-menu').click(function(e) {
+    e.preventDefault();
+    $('#mobile-nav .main-nav').fadeIn();
+});
+$('.close-menu').click(function(e) {
+    e.preventDefault();
+    $('#mobile-nav .main-nav').fadeOut();
+});
+
+$('.choose-ville > a').click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass("open");
+    $('.choose-ville ul').slideToggle();
+});
+
+$('#mc-form').submit(function(e) {
+    e.preventDefault();
+});
+
+
+$('.villes a').click(function() {
+    $(this).trigger("click");
+})
+function callbackFunction (resp) {
+    console.log(resp.code);
+    if (resp.result === 'success') {
+        $('#mc-form').fadeOut(250, function() {
+            $('.bandeau-infolettre .merci, bandeau-fanclub .merci').html("L'inscription à notre liste d'envoie a été complétée avec succès.").fadeIn();
+        });
+    }
+    if (resp.result === 'error') {
+        console.log(resp);
+        $('#mc-form').fadeOut(250, function() {
+            $('.bandeau-infolettre .merci, .bandeau-fanclub .merci').html("Erreur! L'inscription à notre liste d'envoie n'a plus être complétée. Veuillez réessayer.").fadeIn();
+
+            setTimeout(function() {
+                $('.bandeau-infolettre .merci, .bandeau-fanclub .merci').fadeOut(250, function() {
+                    $('#mc-form').fadeIn();
+                });
+            }, 4000);
+        });
+
+    }
+}
+
+$('#mc-form').ajaxChimp({
+    url: '//comediestar.us6.list-manage.com/subscribe/post?u=ca0bb0d7a377d38cb3c3c5018&amp;id=caacce3de5',
+    callback: callbackFunction
+});
 
 
 });

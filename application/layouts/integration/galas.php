@@ -19,45 +19,11 @@
     </div>
     <div class="large-4  columns">
         <div class="row small-collapse">
-            <div class="small-12 medium-6 large-12 columns">
-
-                <div class="bloc-comediestar cta table">
-                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=eJfdyofj8KU"></a>
-                        <div>
-                            <i class="fa fa-youtube-play"></i>
-                            <span>
-                                Consulter notre vidéo corporative
-                            </span>
-                        </div>
-                </div>
-            </div>
-            <div class="small-12 medium-6 large-12 columns">
-                <div class="bloc-comediestar phil table">
-                    <div>
-                        <i class="fa fa-quote-right"></i>
-                        <span>
-                            C'est très l'fun la formule, parce qu'on voit plein de talents ...
-                        </span>
-                        <p>
-                            <span class="uppercase">Philippe laprise</span>
-                            Animateur des galas 2013 à 2015
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="small-12 medium-12 large-12 columns">
-                <div class="bloc-comediestar microphone table">
-                    <div>
-                        <i class="fa fa-bullhorn"></i>
-                        <span>
-                            Plus qu’un gala...
-                            <strong>Découvrez l’agence</strong>
-                            comédie star
-                        </span>
-                        <a href="#">Plus de détails</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/box/box_video.php');
+            include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/box/box_quote.php');
+            include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/box/box_gala.php');
+            ?>
         </div>
     </div>
 </div>
@@ -67,4 +33,5 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_video.php');
 include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_vert_2.php');
+include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
 ?>

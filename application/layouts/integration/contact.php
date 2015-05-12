@@ -1,41 +1,44 @@
 <div class="row sectionX2 contact">
     <div class="medium-6 large-offset-1 columns">
-        <div id="confirmation-form-contact">
-            <div class="table">
-                <div>
-                    <h2>Message envoyé!</h2>
-                    <p>
-                        Merci pour votre demande! <br>
-                        Sachez que nous vous répondrons dans les plus bref délais! <br>
-                        À bientôt</p>
+
+        <h1 class="title_section">Écrivez-nous</h1>
+        <form id="form-contact" class="section" action="" data-parsley-validate>
+            <div id="confirmation-form-contact">
+                <div class="table">
+                    <div>
+                        <h2>Message envoyé!</h2>
+                        <p>
+                            Merci pour votre demande! <br>
+                            Sachez que nous vous répondrons dans les plus bref délais! <br>
+                            À bientôt</p>
+                        </div>
                     </div>
+                    <a href="#" id="back2form">Retour au formulaire <i class="fa fa-angle-double-right"></i></a>
                 </div>
-                <a href="#">Retour au formulaire <i class="fa fa-angle-double-right"></i></a>
-            </div>
-            <h1 class="title_section">Écrivez-nous</h1>
-            <form id="form-contact" class="section" action="" data-parsley-validate>
-                <div class="row">
-                    <div class="medium-6 columns">
-                        <input type="text" name="prenom" placeholder="Prénom" required>
+                <div class="form">
+                    <div class="row">
+                        <div class="medium-6 columns">
+                            <input type="text" name="prenom" placeholder="Prénom" required>
+                        </div>
+                        <div class="medium-6 columns">
+                            <input type="text" name="nom" placeholder="Nom" required>
+                        </div>
                     </div>
-                    <div class="medium-6 columns">
-                        <input type="text" name="nom" placeholder="Nom" required>
+                    <div class="row">
+                        <div class="medium-6 columns">
+                            <input type="text" name="telephone" placeholder="Téléphone">
+                        </div>
+                        <div class="medium-6 columns">
+                            <input type="email" name="courriel" placeholder="Courriel" required>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <textarea name="message" id="" placeholder="Votre message" required></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Soumettre" class="btn btn--primary">
                 </div>
-                <div class="row">
-                    <div class="medium-6 columns">
-                        <input type="text" name="telephone" placeholder="Téléphone">
-                    </div>
-                    <div class="medium-6 columns">
-                        <input type="email" name="courriel" placeholder="Courriel" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="medium-12 columns">
-                        <textarea name="message" id="" placeholder="Votre message" required></textarea>
-                    </div>
-                </div>
-                <input type="submit" value="Soumettre" class="btn btn--primary">
             </form>
         </div>
 
@@ -63,7 +66,7 @@
     </div>
 
     <?php
-    include('/application/layouts/components/contact/listing_villes.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/contact/listing_villes.php');
     include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_vert_3.php');
     include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/bandeau/bandeau_infolettre.php');
     ?>

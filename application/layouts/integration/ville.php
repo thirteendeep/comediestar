@@ -17,10 +17,10 @@
                                     <img src="/application/images/villes/<?php echo $key; ?>-hover.png" alt="<?php echo $ville['nom']; ?>">
                                 </a>
                                 <h2 class="title_section">
-                                    <a href="<?php echo $ville['nom']; ?>"><?php echo $ville['nom']; ?></a>
+                                    <a href="/ville/<?php echo $key; ?>"><?php echo $ville['nom']; ?></a>
                                 </h2>
                                 <span>
-                                    <a href="<?php echo $ville['nom']; ?>"><?php echo $ville['salle']; ?></a>
+                                    <a href="/ville/<?php echo $key; ?>"><?php echo $ville['salle']; ?></a>
                                 </span>
                             </article>
                         </li>

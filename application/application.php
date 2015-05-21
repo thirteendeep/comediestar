@@ -50,6 +50,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/core/includes/app.config.php');
             <![endif]-->
         </head>
         <body>
+            <?php include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/layout/overlay_newsletter.php'); ?>
             <div id="site-container">
                 <?php
                 include($_SERVER['DOCUMENT_ROOT'].'/application/layouts/components/layout/header.php');

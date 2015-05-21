@@ -4433,6 +4433,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  -webkit-appearance: none;
   font-weight: 500; }
   .btn:hover {
     color: #fff; }
@@ -4448,6 +4449,10 @@ a {
     border-radius: 3px; }
     .btn.btn--transparent:hover {
       color: #fff; }
+    .btn.btn--transparent.invert {
+      border: 1px solid #3ab596;
+      color: #3ab596;
+      background: transparent; }
   .btn.ticket:before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -5545,6 +5550,33 @@ form input[type=submit] {
     margin-top: 0; }
     .contact form .row .columns {
       margin-bottom: 10px; } }
+
+.overlay {
+  display: none;
+  width: 100%;
+  max-width: 490px;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto; }
+  .overlay .container-newsletter {
+    text-align: center;
+    padding: 30px; }
+  .overlay ul {
+    width: 345px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3ab596;
+    margin: 20px auto; }
+  .overlay ul li {
+    padding-bottom: 0; }
+  .overlay input[type="color"], .overlay input[type="date"], .overlay input[type="datetime"], .overlay input[type="datetime-local"], .overlay input[type="email"], .overlay input[type="month"], .overlay input[type="number"], .overlay input[type="password"], .overlay input[type="search"], .overlay input[type="tel"], .overlay input[type="text"], .overlay input[type="time"], .overlay input[type="url"], .overlay input[type="week"], .overlay textarea, .overlay select {
+    background: #fff;
+    border: 1px solid #e5e5e5; }
+  .overlay form input[type=submit] {
+    margin-bottom: 0; }
+
+.mfp-container .overlay {
+  display: block; }
 
 
 /*# sourceMappingURL=maps/comediestar.css.map */

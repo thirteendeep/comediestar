@@ -48,7 +48,7 @@ $villes = array(
             'phone' => "450.434.4006 ",
             'url' => "http://www.odyscene.com/artist/876-gala-comedie-star.html"
         ),
-        'vedette' => true,
+        'vedette' => false,
         'humoriste' => array(
             array(
                 'nom' => "Barrette",
@@ -61,13 +61,13 @@ $villes = array(
                 'image' => "/application/images/galas/artistes/simon-leblanc.png"
             ),
             array(
-                'nom' => "Confirmer",
-                'prenom' => "Artistes à",
+                'nom' => "Hébert",
+                'prenom' => "Pierre",
                 'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
             array(
                     'nom' => "Confirmer",
-                'prenom' => "Artistes à",
+                'prenom' => "Artiste à",
                 'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
         )
@@ -84,7 +84,7 @@ $villes = array(
             'phone' => "514.367.6373",
             'url' => "http://theatredesjardins.com/spectacle/comedie-star-pierre-hebert-simon-leblanc-mario-jean-real-beland/"
         ),
-        'vedette' => true,
+        'vedette' => false,
         'humoriste' => array(
             array(
                 'nom' => "Jean",
@@ -102,8 +102,8 @@ $villes = array(
                 'image' => "/application/images/galas/artistes/simon-leblanc.png"
             ),
             array(
-                'nom' => "Confirmer",
-                'prenom' => "Artistes à",
+                'nom' => "Hébert",
+                'prenom' => "Pierre",
                 'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
         )
@@ -120,7 +120,7 @@ $villes = array(
             'phone' => "819.820.1000",
             'url' => "http://www.centrecultureludes.ca/billet-spectacle/spectacles/gala-comedie-star/gala-comedie-star/24-03-2016-20-00.aspx"
         ),
-        'vedette' => true,
+        'vedette' => false,
         'humoriste' => array(
             array(
                 'nom' => "Barrette",
@@ -133,17 +133,54 @@ $villes = array(
                 'image' => "/application/images/galas/artistes/simon-leblanc.png"
             ),
             array(
-                'nom' => "Confirmer",
-                'prenom' => "Artistes à",
+                'nom' => "Hébert",
+                'prenom' => "Pierre",
                 'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
             array(
                     'nom' => "Confirmer",
-                'prenom' => "Artistes à",
+                'prenom' => "Artiste à",
                 'image' => "/application/images/galas/artistes/confirmer-gars.png"
             ),
         )
-    )
+	),
+   'trois-rivieres' => array(
+        'nom' => "Trois-Rivières",
+        'salle' => "Salle J.-Antonio-Thompson",
+        'date' => "9 mars 2016",
+        'animateur' => "À Confirmer",
+        'image_animateur' => "/application/images/galas/artistes/animateur-confirmer.png",
+        'billetterie' => array(
+            'nom' => "En Spectacle",
+            'logo' => "/application/images/galas/logo/trois-rivieres.png",
+            'phone' => "819.380.9797 ",
+            'url' => "http://www.enspectacle.ca/node/2616?rep=0"
+        ),
+        'vedette' => false,
+        'humoriste' => array(
+            array(
+                'nom' => "Jean",
+                'prenom' => "Mario",
+                'image' => "/application/images/galas/artistes/mario-jean.png"
+            ),
+            array(
+                'nom' => "Leblanc",
+                'prenom' => "Simon",
+                'image' => "/application/images/galas/artistes/simon-leblanc.png"
+            ),
+            array(
+                'nom' => "Hébert",
+                'prenom' => "Pierre",
+                'image' => "/application/images/galas/artistes/confirmer-gars.png"
+            ),
+            array(
+                    'nom' => "Confirmer",
+                'prenom' => "Artiste à",
+                'image' => "/application/images/galas/artistes/confirmer-gars.png"
+            )
+        )
+    )		
+    
 );
 
 

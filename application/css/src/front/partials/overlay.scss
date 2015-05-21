@@ -1,0 +1,41 @@
+.overlay {
+    display:  none;
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+    background-color: #fff;
+    margin:0 auto;
+    .container-newsletter {
+     
+        text-align: center;
+        padding:30px;
+    }
+    ul {
+        width: 345px;
+        font-size: 16px;
+        font-weight: bold;
+        color:#3ab596;
+        margin: 20px auto;
+
+    }
+
+    ul li {
+        padding-bottom: 0;
+    }
+
+    #{$all-text-inputs} {
+        background:#fff;
+        border:1px solid #e5e5e5;
+    }
+
+    form input[type=submit] {
+        margin-bottom:0;
+    }
+
+
+
+}
+
+.mfp-container .overlay {
+    display: block;
+}

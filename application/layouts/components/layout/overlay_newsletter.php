@@ -32,7 +32,7 @@
             </ul>
         </div>
         <div class="row">
-            <form action="" id="mc-form" data-parsley-validate="" novalidate="true">
+            <form action="" id="mc-form-overlay" method="POST" data-parsley-validate="" novalidate="true">
                 <div class="row">
                     <div class="small-6 columns">
                         <input type="text" placeholder="Prénom" name="FNAME" id="mce-FNAME" required="" data-parsley-id="2002"><ul class="parsley-errors-list" id="parsley-id-2002"></ul>

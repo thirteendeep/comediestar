@@ -34,7 +34,7 @@
             <div class="merci">
                 
             </div>
-            <form action="" id="mc-form" data-parsley-validate>
+            <form action="" id="mc-form" method="POST" data-parsley-validate>
                 <div class="row">
                     <div class="small-6 columns">
                         <input type="text" placeholder="Prénom" name="FNAME" id="mce-FNAME" required>

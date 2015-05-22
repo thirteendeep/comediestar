@@ -21,8 +21,7 @@ if(!empty($prenom) && !empty($nom) && !empty($courriel)){
     Telephone : <b>".(empty($telephone)?'--':$telephone)."</b><br />
     MEssage : <br>".nl2br($message)."<br />";
 
-    //mail($mail, $subject, $body, $headers)
-    if (mail("rossc@globalia.ca", $subject, $body, $headers)) {
+    if (mail($mail, $subject, $body, $headers)) {
         echo "true";
     }
     else {

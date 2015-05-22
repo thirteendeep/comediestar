@@ -99,7 +99,7 @@ $(document).ready(function() {
         $('.choose-ville ul').slideToggle();
     });
 
-    $('#mc-form').submit(function(e) {
+    $('#mc-form, #mc-form-overlay').submit(function(e) {
         e.preventDefault();
     });
 
@@ -134,5 +134,9 @@ $(document).ready(function() {
         callback: callbackFunction
     });
 
+    $('#mc-form-overlay').ajaxChimp({
+        url: '//comediestar.us6.list-manage.com/subscribe/post?u=ca0bb0d7a377d38cb3c3c5018&amp;id=caacce3de5',
+        callback: callbackFunction
+    });
 
 });
